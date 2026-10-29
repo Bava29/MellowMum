@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MellowMum</title>
+
+    <meta name="description"
+        content="Discover comfortable and stylish maternity wear at MellowMum, designed for every stage of motherhood.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <main class="mm-auth-page">
+
+        <!-- Top Right Controls: Not Fixed -->
+        <div class="mm-auth-topbar">
+            <div class="mm-auth-tools">
+                <button type="button" class="mm-auth-tool" id="mmThemeToggle" aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="mm-auth-tool mm-rtl-toggle" id="mmRtlToggle" aria-label="Toggle RTL"
+                    title="Toggle RTL" aria-pressed="false">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Login Card -->
+        <section class="mm-auth-card" aria-labelledby="mmLoginTitle">
+
+            <a href="index.html" class="mm-auth-logo-link">
+                <img src="images/logo.png" alt="MellowMum" class="mm-auth-logo"
+                    onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+            </a>
+
+            <div class="mm-auth-heading">
+                <span class="mm-auth-eyebrow">WELCOME BACK</span>
+                <h1 id="mmLoginTitle">Lovely to See You <span>Again.</span></h1>
+                <p>Sign in to continue your beautiful motherhood journey.</p>
+            </div>
+
+            <form id="mmLoginForm" class="mm-auth-form">
+
+                <div class="mm-auth-field">
+                    <label for="mmLoginEmail">Email Address <span>*</span></label>
+                    <input type="email" id="mmLoginEmail" name="email" placeholder="you@example.com"
+                        autocomplete="email" required>
+                </div>
+
+                <div class="mm-auth-field">
+                    <label for="mmLoginPassword">Password <span>*</span></label>
+
+                    <div class="mm-password-wrap">
+                        <input type="password" id="mmLoginPassword" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+
+                        <button type="button" class="mm-password-toggle" data-password-target="mmLoginPassword"
+                            aria-label="Show password" aria-pressed="false">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mm-auth-options">
+                    <label class="mm-remember">
+                        <input type="checkbox" id="mmRememberMe" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="forgot-password.html" class="mm-forgot-link">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <button type="submit" class="mm-auth-submit">
+                    Log In <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <p id="mmLoginStatus" class="mm-auth-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="mm-auth-divider">
+                <span></span>
+                <p>Or continue with</p>
+                <span></span>
+            </div>
+
+            <!-- Social Login Icons -->
+            <div class="mm-social-login">
+                <button type="button" class="mm-social-btn mm-social-facebook" data-social="Facebook"
+                    aria-label="Continue with Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="mm-social-btn mm-social-apple" data-social="Apple"
+                    aria-label="Continue with Apple">
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="mm-social-btn mm-social-google" data-social="Google"
+                    aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="" class="mm-social-svg">
+                </button>
+            </div>
+
+            <p class="mm-auth-switch">
+                New to MellowMum?
+                <a href="register.html">Create an account</a>
+            </p>
+
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+
+
+</body>
+
+</html>

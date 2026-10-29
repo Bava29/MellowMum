@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MellowMum</title>
+
+    <meta name="description"
+        content="Discover comfortable and stylish maternity wear at MellowMum, designed for every stage of motherhood.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ==========================
+     MELLOWMUM HEADER
+========================== -->
+
+    <header class="mm-header">
+        <div class="mm-header-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="mm-logo" aria-label="MellowMum Home">
+                <img src="images/logo.png" alt="MellowMum">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="mm-desktop-nav" aria-label="Main navigation">
+                <a href="index.html" class="mm-nav-link">Home 1</a>
+                <a href="home-2.html" class="mm-nav-link">Home 2</a>
+                <a href="about.html" class="mm-nav-link">About</a>
+                <a href="shop.html" class="mm-nav-link active">Shop</a>
+                <a href="size-guide.html" class="mm-nav-link">Size Guide</a>
+                <a href="contact.html" class="mm-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="mm-desktop-actions">
+
+                <button class="mm-icon-btn" id="mm-desktop-theme" type="button" aria-label="Toggle dark mode"
+                    title="Dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="mm-icon-btn" id="mm-desktop-rtl" type="button" aria-label="Toggle RTL mode"
+                    title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="mm-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="mm-menu-toggle" id="mm-menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="mm-mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation -->
+        <div class="mm-mobile-menu" id="mm-mobile-menu" aria-hidden="true" inert>
+
+            <nav class="mm-mobile-nav" aria-label="Mobile navigation">
+                <a href="index.html" class="mm-mobile-link">Home 1</a>
+                <a href="home-2.html" class="mm-mobile-link">Home 2</a>
+                <a href="about.html" class="mm-mobile-link">About</a>
+                <a href="shop.html" class="mm-mobile-link active">Shop</a>
+                <a href="size-guide.html" class="mm-mobile-link">Size Guide</a>
+                <a href="contact.html" class="mm-mobile-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mm-mobile-settings">
+
+                <button class="mm-setting-btn" id="mm-mobile-theme" type="button">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="mm-setting-btn" id="mm-mobile-rtl" type="button">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL Mode</span>
+                </button>
+
+                <a href="login.html" class="mm-login-btn mm-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- COMMON INNER PAGE HERO -->
+    <section class="mm-inner-hero shop-banner" id="page-hero">
+
+        <div class="mm-inner-hero-overlay"></div>
+
+        <div class="mm-inner-hero-content">
+
+            <span class="mm-inner-hero-eyebrow">
+                THE MELLOWMUM COLLECTION
+            </span>
+
+            <h1>Made for Your New Chapter.</h1>
+
+            <p>
+                Discover maternity essentials that bring together effortless style, everyday comfort, and thoughtful
+                details for every moment of motherhood.
+            </p>
+
+            <nav class="mm-inner-hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Shop</span>
+            </nav>
+
+        </div>
+
+        <span class="mm-inner-hero-decoration mm-inner-hero-decoration-one" aria-hidden="true">♡</span>
+
+        <span class="mm-inner-hero-decoration mm-inner-hero-decoration-two" aria-hidden="true">✳</span>
+
+    </section>
+
+
+    <main>
+        <!-- HERO -->
+        <section class="shop-hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> THE MELLOWMUM COLLECTION</p>
+                <h1>Comfort for<br><em>every chapter.</em></h1>
+                <p class="hero-description">
+                    Thoughtful pieces for growing days, slow mornings and everything in between.
+                </p>
+                <a class="hero-link" href="#shop-products">
+                    Find your favourites <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+
+            <div class="hero-art" aria-label="Maternity fashion collection">
+                <div class="hero-image hero-image-main">
+                    <img src="images/s1.jpg" alt="Woman in soft neutral fashion">
+                </div>
+                <div class="hero-image hero-image-small">
+                    <img src="images/s2.jpg" alt="Relaxed everyday fashion" loading="lazy">
+                </div>
+                <div class="hero-stamp">
+                    <span>MADE FOR</span>
+                    <strong>your<br>journey</strong>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <span class="hero-orbit orbit-one"></span>
+                <span class="hero-orbit orbit-two"></span>
+            </div>
+        </section>
+
+        <!-- CATEGORY CARDS -->
+        <section class="category-section" aria-labelledby="categoryTitle">
+            <div class="section-intro">
+                <div>
+                    <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+                    <h2 id="categoryTitle">Shop by <em>category</em></h2>
+                </div>
+                <p>Find the pieces that fit your day, your style and your stage.</p>
+            </div>
+
+            <div class="category-grid" id="categoryCards">
+                <button class="category-card" data-category="Work Wear" type="button">
+                    <span class="category-image">
+                        <img src="images/category-work-wear.jpg" alt="" loading="lazy">
+                    </span>
+                    <span class="category-meta">
+                        <span><b>Work Wear</b><small>Polished, all-day comfort</small></span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </button>
+
+                <button class="category-card" data-category="Casual Wear" type="button">
+                    <span class="category-image">
+                        <img src="images/category-casual-wear.jpg" alt="" loading="lazy">
+                    </span>
+                    <span class="category-meta">
+                        <span><b>Casual Wear</b><small>Everyday ease</small></span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </button>
+
+                <button class="category-card" data-category="Nursing Wear" type="button">
+                    <span class="category-image">
+                        <img src="images/category-nursing-wear.jpg" alt="" loading="lazy">
+                    </span>
+                    <span class="category-meta">
+                        <span><b>Nursing Wear</b><small>Made for feeding access</small></span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </button>
+
+                <button class="category-card" data-category="Occasion Wear" type="button">
+                    <span class="category-image">
+                        <img src="images/category-occasion-wear.jpg" alt="" loading="lazy">
+                    </span>
+                    <span class="category-meta">
+                        <span><b>Occasion Wear</b><small>Celebrate your moments</small></span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- PRODUCT SHOP -->
+        <section class="product-section" id="shop-products" aria-labelledby="productTitle">
+            <div class="section-intro product-intro">
+                <div>
+                    <p class="eyebrow">MADE TO MOVE WITH YOU</p>
+                    <h2 id="productTitle">The <em>shop edit</em></h2>
+                </div>
+                <p>Comfort-first essentials, thoughtfully picked for your wardrobe.</p>
+            </div>
+
+            <div class="shop-toolbar">
+                <p id="resultCount" aria-live="polite">Showing all products</p>
+                <div class="toolbar-actions">
+                    <label class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="productSearch" placeholder="Search styles..."
+                            aria-label="Search products">
+                    </label>
+
+                    <button class="filter-open" id="filterOpen" type="button">
+                        <i class="fa-solid fa-sliders"></i> Filters
+                        <span id="activeFilterCount">0</span>
+                    </button>
+
+                    <label class="sort-control">
+                        <span>Sort by</span>
+                        <select id="sortSelect" aria-label="Sort products">
+                            <option value="popular">Popular</option>
+                            <option value="price-low">Price: low to high</option>
+                            <option value="price-high">Price: high to low</option>
+                            <option value="newest">Newest arrivals</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="shop-layout">
+                <div class="filter-backdrop" id="filterBackdrop"></div>
+
+                <aside class="filter-panel" id="filterPanel" aria-label="Product filters">
+                    <div class="filter-panel-heading">
+                        <h3>Refine your edit</h3>
+                        <button type="button" class="filter-close" id="filterClose" aria-label="Close filters">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-heading">
+                            <h4>Category</h4>
+                            <button type="button" data-clear="category">Clear</button>
+                        </div>
+                        <label class="check-row"><input type="checkbox" name="category" value="Work Wear"><span>Work
+                                Wear</span></label>
+                        <label class="check-row"><input type="checkbox" name="category" value="Casual Wear"><span>Casual
+                                Wear</span></label>
+                        <label class="check-row"><input type="checkbox" name="category"
+                                value="Nursing Wear"><span>Nursing Wear</span></label>
+                        <label class="check-row"><input type="checkbox" name="category"
+                                value="Occasion Wear"><span>Occasion Wear</span></label>
+                        <label class="check-row"><input type="checkbox" name="category"
+                                value="Nightwear"><span>Nightwear</span></label>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-heading">
+                            <h4>Maternity stage</h4>
+                            <button type="button" data-clear="stage">Clear</button>
+                        </div>
+                        <label class="check-row"><input type="checkbox" name="stage" value="First trimester"><span>First
+                                trimester</span></label>
+                        <label class="check-row"><input type="checkbox" name="stage"
+                                value="Second trimester"><span>Second trimester</span></label>
+                        <label class="check-row"><input type="checkbox" name="stage" value="Third trimester"><span>Third
+                                trimester</span></label>
+                        <label class="check-row"><input type="checkbox" name="stage" value="Postpartum"><span>Postpartum
+                                / nursing</span></label>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-heading">
+                            <h4>Size</h4>
+                            <button type="button" data-clear="size">Clear</button>
+                        </div>
+                        <div class="size-options">
+                            <label><input type="checkbox" name="size" value="S"><span>S</span></label>
+                            <label><input type="checkbox" name="size" value="M"><span>M</span></label>
+                            <label><input type="checkbox" name="size" value="L"><span>L</span></label>
+                            <label><input type="checkbox" name="size" value="XL"><span>XL</span></label>
+                            <label><input type="checkbox" name="size" value="XXL"><span>XXL</span></label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-heading">
+                            <h4>Price range</h4>
+                            <button type="button" data-clear="price">Clear</button>
+                        </div>
+                        <div class="price-range-label">
+                            <span>₹499</span>
+                            <span>Up to ₹<b id="priceMaxLabel">3,999</b></span>
+                        </div>
+                        <input class="price-range" type="range" id="priceRange" min="499" max="3999" step="100"
+                            value="3999" aria-label="Maximum price">
+                    </div>
+
+                    <div class="filter-bottom">
+                        <button class="clear-all" id="clearAll" type="button">Clear all filters</button>
+                        <button class="apply-filters" id="applyFilters" type="button">
+                            Show results <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </aside>
+
+                <div class="products-area">
+                    <div class="active-filters" id="activeFilters"></div>
+
+                    <div class="product-grid" id="productGrid">
+
+                        <article class="product-card" data-id="1" data-name="Soft Structure Maternity Shirt"
+                            data-category="Work Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="1899" data-popular="10" data-date="202610">
+                            <div class="product-image">
+                                <img src="images/product-1.jpg" alt="Neutral tailored shirt" loading="lazy">
+                                <span class="product-badge">BESTSELLER</span>
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Soft Structure Maternity Shirt to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="1">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">WORK WEAR</p>
+                                <h3>Soft Structure Maternity Shirt</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,899</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-mauve"></i><i class="swatch swatch-olive"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="2" data-name="Everyday Ease Cotton Dress"
+                            data-category="Casual Wear" data-stage="First trimester,Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="1599" data-popular="9" data-date="202609">
+                            <div class="product-image">
+                                <img src="images/product-2.jpg" alt="Casual floral dress" loading="lazy">
+                                <span class="product-badge badge-new">NEW IN</span>
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Everyday Ease Cotton Dress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="2">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>Everyday Ease Cotton Dress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,599</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="3" data-name="The Easy-Feed Nursing Top"
+                            data-category="Nursing Wear" data-stage="Postpartum,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="999" data-popular="8" data-date="202608">
+                            <div class="product-image">
+                                <img src="images/product-3.jpg" alt="Soft nursing-friendly top" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add The Easy-Feed Nursing Top to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="3">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>The Easy-Feed Nursing Top</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹999</p>
+                                    <div class="swatches"><i class="swatch swatch-olive"></i><i
+                                            class="swatch swatch-mauve"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="4" data-name="Bloom Baby Shower Maxi"
+                            data-category="Occasion Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="2799" data-popular="7" data-date="202607">
+                            <div class="product-image">
+                                <img src="images/product-4.jpg" alt="Occasion maxi dress" loading="lazy">
+                                <span class="product-badge">SPECIAL PICK</span>
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Bloom Baby Shower Maxi to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="4">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">OCCASION WEAR</p>
+                                <h3>Bloom Baby Shower Maxi</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹2,799</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-mauve"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="5" data-name="Cloud Nine Maternity Lounge Set"
+                            data-category="Nightwear" data-stage="Second trimester,Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1799" data-popular="6" data-date="202606">
+                            <div class="product-image">
+                                <img src="images/product-5.jpg" alt="Comfortable lounge set" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Cloud Nine Maternity Lounge Set to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="5">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NIGHTWEAR</p>
+                                <h3>Cloud Nine Maternity Lounge Set</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,799</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="6" data-name="Everyday Stretch Maternity Leggings"
+                            data-category="Casual Wear"
+                            data-stage="First trimester,Second trimester,Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="799" data-popular="9" data-date="202605">
+                            <div class="product-image">
+                                <img src="images/product-6.jpg" alt="Everyday casual outfit" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Everyday Stretch Maternity Leggings to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="6">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>Everyday Stretch Maternity Leggings</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹799</p>
+                                    <div class="swatches"><i class="swatch swatch-olive"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="7" data-name="Desk-to-Dinner Maternity Trousers"
+                            data-category="Work Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="2199" data-popular="5" data-date="202604">
+                            <div class="product-image">
+                                <img src="images/product-7.jpg" alt="Smart casual workwear" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Desk-to-Dinner Maternity Trousers to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="7">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">WORK WEAR</p>
+                                <h3>Desk-to-Dinner Maternity Trousers</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹2,199</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-mauve"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="8" data-name="Soft Days Nursing Nightdress"
+                            data-category="Nursing Wear" data-stage="Postpartum,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="1299" data-popular="8" data-date="202603">
+                            <div class="product-image">
+                                <img src="images/product-8.jpg" alt="Soft nightwear" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Soft Days Nursing Nightdress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="8">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>Soft Days Nursing Nightdress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,299</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="9" data-name="The Weekend Maternity Kurti"
+                            data-category="Casual Wear" data-stage="First trimester,Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="1199" data-popular="6" data-date="202602">
+                            <div class="product-image">
+                                <img src="images/product-9.jpg" alt="Casual printed outfit" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add The Weekend Maternity Kurti to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="9">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>The Weekend Maternity Kurti</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,199</p>
+                                    <div class="swatches"><i class="swatch swatch-olive"></i><i
+                                            class="swatch swatch-rose"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="10" data-name="Graceful Gathered Occasion Dress"
+                            data-category="Occasion Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="3199" data-popular="4" data-date="202601">
+                            <div class="product-image">
+                                <img src="images/product-10.jpg" alt="Elegant occasion dress" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Graceful Gathered Occasion Dress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="10">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">OCCASION WEAR</p>
+                                <h3>Graceful Gathered Occasion Dress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹3,199</p>
+                                    <div class="swatches"><i class="swatch swatch-mauve"></i><i
+                                            class="swatch swatch-rose"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="11" data-name="Slow Morning Nursing Co-ord"
+                            data-category="Nursing Wear" data-stage="Postpartum,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="1899" data-popular="7" data-date="202512">
+                            <div class="product-image">
+                                <img src="images/product-11.jpg" alt="Soft matching set" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Slow Morning Nursing Co-ord to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="11">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>Slow Morning Nursing Co-ord</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,899</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="12" data-name="Soft Rib Maternity Sleep Set"
+                            data-category="Nightwear" data-stage="Second trimester,Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1499" data-popular="5" data-date="202511">
+                            <div class="product-image">
+                                <img src="images/product-12.jpg" alt="Comfortable sleepwear" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Soft Rib Maternity Sleep Set to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="12">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NIGHTWEAR</p>
+                                <h3>Soft Rib Maternity Sleep Set</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,499</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="13" data-name="Breeze Knit Nursing Tee"
+                            data-category="Nursing Wear" data-stage="Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1099" data-popular="8" data-date="202510">
+                            <div class="product-image">
+                                <img src="images/product-13.jpg" alt="Soft knit maternity top" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Breeze Knit Nursing Tee to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="13">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>Breeze Knit Nursing Tee</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,099</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-rose"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="14" data-name="Sunday Soft Maternity Hoodie"
+                            data-category="Casual Wear" data-stage="Second trimester,Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1999" data-popular="7" data-date="202509">
+                            <div class="product-image">
+                                <img src="images/product-14.jpg" alt="Relaxed soft maternity hoodie" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Sunday Soft Maternity Hoodie to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="14">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>Sunday Soft Maternity Hoodie</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,999</p>
+                                    <div class="swatches"><i class="swatch swatch-olive"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="15" data-name="Meadow Wrap Maternity Blouse"
+                            data-category="Work Wear" data-stage="First trimester,Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="1699" data-popular="6" data-date="202508">
+                            <div class="product-image">
+                                <img src="images/product-15.jpg" alt="Elegant wrap maternity blouse" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Meadow Wrap Maternity Blouse to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="15">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">WORK WEAR</p>
+                                <h3>Meadow Wrap Maternity Blouse</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,699</p>
+                                    <div class="swatches"><i class="swatch swatch-mauve"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="16" data-name="Rosewater Nursing Slip Dress"
+                            data-category="Nursing Wear" data-stage="Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1799" data-popular="9" data-date="202507">
+                            <div class="product-image">
+                                <img src="images/product-16.jpg" alt="Light nursing friendly slip dress" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Rosewater Nursing Slip Dress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="16">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>Rosewater Nursing Slip Dress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,799</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="17" data-name="Harbor Linen Maternity Shirt Dress"
+                            data-category="Casual Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="2299" data-popular="5" data-date="202506">
+                            <div class="product-image">
+                                <img src="images/product-17.jpg" alt="Breezy linen shirt dress" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Harbor Linen Maternity Shirt Dress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="17">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>Harbor Linen Maternity Shirt Dress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹2,299</p>
+                                    <div class="swatches"><i class="swatch swatch-olive"></i><i
+                                            class="swatch swatch-cream"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="18" data-name="Petal Pleat Maternity Skirt"
+                            data-category="Work Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="1499" data-popular="4" data-date="202505">
+                            <div class="product-image">
+                                <img src="images/product-18.jpg" alt="Flowing pleated maternity skirt" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Petal Pleat Maternity Skirt to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="18">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">WORK WEAR</p>
+                                <h3>Petal Pleat Maternity Skirt</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,499</p>
+                                    <div class="swatches"><i class="swatch swatch-mauve"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="19" data-name="Moonlight Button-Front Sleep Dress"
+                            data-category="Nightwear" data-stage="Third trimester,Postpartum" data-sizes="S,M,L,XL,XXL"
+                            data-price="1399" data-popular="7" data-date="202504">
+                            <div class="product-image">
+                                <img src="images/product-19.jpg" alt="Button-front maternity sleep dress"
+                                    loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Moonlight Button-Front Sleep Dress to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="19">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NIGHTWEAR</p>
+                                <h3>Moonlight Button-Front Sleep Dress</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,399</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-rose"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="20" data-name="Golden Hour Maternity Jumpsuit"
+                            data-category="Occasion Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL" data-price="2899" data-popular="6" data-date="202503">
+                            <div class="product-image">
+                                <img src="images/product-20.jpg" alt="Modern occasion maternity jumpsuit"
+                                    loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Golden Hour Maternity Jumpsuit to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="20">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">OCCASION WEAR</p>
+                                <h3>Golden Hour Maternity Jumpsuit</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹2,899</p>
+                                    <div class="swatches"><i class="swatch swatch-mauve"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="21" data-name="Cocoon Soft Nursing Cardigan"
+                            data-category="Nursing Wear" data-stage="Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1899" data-popular="5" data-date="202502">
+                            <div class="product-image">
+                                <img src="images/product-21.jpg" alt="Cozy open nursing cardigan" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Cocoon Soft Nursing Cardigan to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="21">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NURSING WEAR</p>
+                                <h3>Cocoon Soft Nursing Cardigan</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,899</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="22" data-name="Willow Everyday Maternity Tunic"
+                            data-category="Casual Wear" data-stage="First trimester,Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="1299" data-popular="8" data-date="202501">
+                            <div class="product-image">
+                                <img src="images/product-22.jpg" alt="Easy everyday maternity tunic" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Willow Everyday Maternity Tunic to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="22">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">CASUAL WEAR</p>
+                                <h3>Willow Everyday Maternity Tunic</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,299</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="23" data-name="Amara Empire-Waist Celebration Gown"
+                            data-category="Occasion Wear" data-stage="Second trimester,Third trimester"
+                            data-sizes="S,M,L,XL,XXL" data-price="3599" data-popular="3" data-date="202412">
+                            <div class="product-image">
+                                <img src="images/product-23.jpg" alt="Flowing empire-waist celebration gown"
+                                    loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Amara Empire-Waist Celebration Gown to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="23">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">OCCASION WEAR</p>
+                                <h3>Amara Empire-Waist Celebration Gown</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹3,599</p>
+                                    <div class="swatches"><i class="swatch swatch-rose"></i><i
+                                            class="swatch swatch-mauve"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-id="24" data-name="Cloud Knit Maternity Joggers"
+                            data-category="Nightwear" data-stage="Second trimester,Third trimester,Postpartum"
+                            data-sizes="S,M,L,XL,XXL" data-price="1199" data-popular="6" data-date="202411">
+                            <div class="product-image">
+                                <img src="images/product-24.jpg" alt="Soft knit maternity joggers" loading="lazy">
+                                <button class="wishlist-button" type="button"
+                                    aria-label="Add Cloud Knit Maternity Joggers to wishlist"><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button class="quick-add" type="button" data-add="24">Quick add <i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category">NIGHTWEAR</p>
+                                <h3>Cloud Knit Maternity Joggers</h3>
+                                <div class="product-bottom">
+                                    <p class="price">₹1,199</p>
+                                    <div class="swatches"><i class="swatch swatch-cream"></i><i
+                                            class="swatch swatch-olive"></i></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="empty-state" id="emptyState" hidden>
+                            <span class="empty-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <h3>No pieces found just yet</h3>
+                            <p>Try adjusting your filters to discover more MellowMum favourites.</p>
+                            <button type="button" id="emptyClear">Clear filters</button>
+                        </div>
+                    </div>
+
+                    <div class="load-more-wrap">
+                        <button class="load-more" id="loadMore" type="button">
+                            You’re all caught up <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 1: FIND YOUR MATERNITY FIT -->
+        <section class="mm-interactive-section mm-fit-section" id="maternity-fit">
+            <div class="mm-interactive-container">
+                <div class="mm-interactive-heading">
+                    <span class="mm-interactive-label">A FIT THAT FEELS RIGHT</span>
+                    <h2>Find Your <em>Maternity Fit</em></h2>
+                    <p>Enter your measurements to get a starting size suggestion for your maternity wardrobe.</p>
+                </div>
+
+                <form id="mmFitForm" class="mm-fit-form">
+                    <div class="mm-fit-fields">
+                        <label>
+                            Bust measurement
+                            <input type="number" id="mmBust" min="1" step="0.1" placeholder="e.g. 96" required>
+                        </label>
+
+                        <label>
+                            Waist measurement
+                            <input type="number" id="mmWaist" min="1" step="0.1" placeholder="e.g. 84" required>
+                        </label>
+
+                        <label>
+                            Hip measurement
+                            <input type="number" id="mmHip" min="1" step="0.1" placeholder="e.g. 102" required>
+                        </label>
+
+                        <label>
+                            Measurement unit
+                            <select id="mmFitUnit">
+                                <option value="cm">Centimetres (cm)</option>
+                                <option value="in">Inches (in)</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <button class="mm-interactive-button" type="submit">
+                        Find My Size <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <div id="mmFitResult" class="mm-fit-result" role="status" aria-live="polite" hidden></div>
+
+                    <p class="mm-fit-note">
+                        This is an approximate starting suggestion, not a guaranteed fit.
+                        Please check the <a href="size-guide.html">size guide</a> and
+                        consider your usual fit preference.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: BUILD YOUR MATERNITY WARDROBE -->
+        <section class="mm-interactive-section mm-wardrobe-section" id="build-wardrobe">
+            <div class="mm-interactive-container">
+                <div class="mm-interactive-heading">
+                    <span class="mm-interactive-label">YOUR STYLE, YOUR STAGE</span>
+                    <h2>Build Your <em>Maternity Wardrobe</em></h2>
+                    <p>Choose what you need, select your stage and budget, and explore matching products.</p>
+                </div>
+
+                <form id="mmWardrobeForm" class="mm-wardrobe-form">
+                    <label>
+                        What are you shopping for?
+                        <select id="mmWardrobeCategory">
+                            <option value="">All categories</option>
+                            <option value="Work Wear">Work Wear</option>
+                            <option value="Casual Wear">Casual Wear</option>
+                            <option value="Nursing Wear">Nursing Wear</option>
+                            <option value="Occasion Wear">Occasion Wear</option>
+                            <option value="Nightwear">Nightwear</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Maternity stage
+                        <select id="mmWardrobeStage">
+                            <option value="">All stages</option>
+                            <option value="First trimester">First trimester</option>
+                            <option value="Second trimester">Second trimester</option>
+                            <option value="Third trimester">Third trimester</option>
+                            <option value="Postpartum">Postpartum / nursing</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Your budget
+                        <select id="mmWardrobeBudget">
+                            <option value="3999">Up to ₹3,999</option>
+                            <option value="2499">Up to ₹2,499</option>
+                            <option value="1499">Up to ₹1,499</option>
+                            <option value="999">Up to ₹999</option>
+                        </select>
+                    </label>
+
+                    <button class="mm-interactive-button" type="submit">
+                        Find My Wardrobe <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <p id="mmWardrobeStatus" class="mm-wardrobe-status" role="status" aria-live="polite"></p>
+
+                <button type="button" id="mmWardrobeReset" class="mm-wardrobe-reset">
+                    Reset preferences
+                </button>
+            </div>
+        </section>
+
+
+        <!-- COMFORT GUIDE -->
+        <section class="comfort-banner">
+            <div class="comfort-art">
+                <img src="images/maternity-model-2.jpg" alt="Woman in a soft neutral outfit" loading="lazy">
+                <span class="comfort-circle">softness<br>in every<br>detail</span>
+            </div>
+            <div class="comfort-copy">
+                <p class="eyebrow">COMFORT IS PERSONAL</p>
+                <h2>Made for the way<br><em>you feel.</em></h2>
+                <p>Flexible fits, thoughtful details and easy-to-love fabrics — because your comfort deserves a
+                    little extra care.</p>
+                <a href="size-guide.html" class="text-link">Explore the fit guide <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+            <div>
+                <p class="eyebrow">A NOTE FROM MELLOWMUM</p>
+                <h2>Little joys, straight to <em>your inbox.</em></h2>
+                <p>Be first to hear about new arrivals, gentle essentials and special offers.</p>
+            </div>
+            <form id="newsletterForm" class="newsletter-form">
+                <label class="sr-only" for="newsletterEmail">Email address</label>
+                <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                <button type="submit">Join us <i class="fa-solid fa-arrow-right"></i></button>
+                <p id="newsletterStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- ==============================
+     MELLOWMUM FOOTER
+============================== -->
+
+    <footer class="mm-footer">
+
+        <div class="mm-footer-main">
+
+            <!-- Brand Information -->
+            <div class="mm-footer-brand">
+                <a href="index.html" class="mm-footer-logo">
+                    <img src="images/logo-white.png" alt="MellowMum">
+                </a>
+
+                <p>
+                    Comfort, confidence and care in every chapter
+                    of your motherhood journey. Discover maternity
+                    wear designed to move with you.
+                </p>
+
+                <div class="mm-footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mm-footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Shop Categories -->
+            <div class="mm-footer-column">
+                <h3>Explore Shop</h3>
+                <ul>
+                    <li><a href="shop.html?category=workwear">Maternity Workwear</a></li>
+                    <li><a href="shop.html?category=casual">Casual Wear</a></li>
+                    <li><a href="shop.html?category=nursing">Nursing Wear</a></li>
+                    <li><a href="shop.html?category=trimester">Trimester Collections</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mm-footer-column mm-footer-contact">
+                <h3>Get in Touch</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your store address here</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:hello@mellowmum.com">
+                        hello@mellowmum.com
+                    </a>
+                </p>
+
+                <a href="contact.html" class="mm-footer-contact-btn">
+                    Visit Our Store
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mm-footer-bottom">
+            <p>
+                &copy; <span id="mm-footer-year"></span>
+                MellowMum. All rights reserved.
+            </p>
+
+            <div class="mm-footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            /* =================================
+               1. MATERNITY FIT SUGGESTION
+            ================================= */
+
+            const fitForm = document.getElementById("mmFitForm");
+            const fitResult = document.getElementById("mmFitResult");
+
+            if (fitForm && fitResult) {
+                fitForm.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    const unit = document.getElementById("mmFitUnit").value;
+
+                    const bust = Number(document.getElementById("mmBust").value);
+                    const waist = Number(document.getElementById("mmWaist").value);
+                    const hip = Number(document.getElementById("mmHip").value);
+
+                    if (
+                        !Number.isFinite(bust) || bust <= 0 ||
+                        !Number.isFinite(waist) || waist <= 0 ||
+                        !Number.isFinite(hip) || hip <= 0
+                    ) {
+                        fitResult.textContent = "Please enter valid measurements greater than zero.";
+                        fitResult.hidden = false;
+                        return;
+                    }
+
+                    const factor = unit === "in" ? 2.54 : 1;
+                    const largestMeasurement = Math.max(bust, waist, hip) * factor;
+
+                    /*
+                     * Preliminary demonstration ranges only.
+                     * Replace these ranges with MellowMum's verified size chart
+                     * before using this as a real size recommendation.
+                     */
+                    let suggestedSize;
+
+                    if (largestMeasurement <= 90) {
+                        suggestedSize = "S";
+                    } else if (largestMeasurement <= 98) {
+                        suggestedSize = "M";
+                    } else if (largestMeasurement <= 106) {
+                        suggestedSize = "L";
+                    } else if (largestMeasurement <= 114) {
+                        suggestedSize = "XL";
+                    } else {
+                        suggestedSize = "XXL";
+                    }
+
+                    fitResult.replaceChildren();
+
+                    const heading = document.createElement("strong");
+                    heading.textContent = "Your preliminary size suggestion: " + suggestedSize;
+
+                    const explanation = document.createElement("p");
+                    explanation.textContent =
+                        "This estimate uses your largest entered circumference only. " +
+                        "It is not based on a verified MellowMum size chart, so please " +
+                        "check the size guide before choosing a size.";
+
+                    explanation.style.margin = "8px 0 0";
+
+                    fitResult.append(heading, explanation);
+                    fitResult.hidden = false;
+                });
+            }
+
+            /* =================================
+               2. MATERNITY WARDROBE BUILDER
+            ================================= */
+
+            const wardrobeForm = document.getElementById("mmWardrobeForm");
+            const wardrobeStatus = document.getElementById("mmWardrobeStatus");
+            const wardrobeReset = document.getElementById("mmWardrobeReset");
+
+            if (!wardrobeForm || !wardrobeStatus) return;
+
+            const categorySelect = document.getElementById("mmWardrobeCategory");
+            const stageSelect = document.getElementById("mmWardrobeStage");
+            const budgetSelect = document.getElementById("mmWardrobeBudget");
+
+            wardrobeForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const category = categorySelect.value;
+                const stage = stageSelect.value;
+                const budget = Number(budgetSelect.value);
+
+                const productCards = Array.from(
+                    document.querySelectorAll("#productGrid .product-card")
+                );
+
+                const matches = productCards.filter(function (card) {
+                    const productCategory = card.dataset.category || "";
+                    const productStages = (card.dataset.stage || "")
+                        .split(",")
+                        .map(function (value) {
+                            return value.trim();
+                        });
+
+                    const price = Number(card.dataset.price);
+
+                    const categoryMatches =
+                        !category || productCategory === category;
+
+                    const stageMatches =
+                        !stage || productStages.includes(stage);
+
+                    const budgetMatches =
+                        Number.isFinite(price) && price <= budget;
+
+                    return categoryMatches && stageMatches && budgetMatches;
+                });
+
+                wardrobeStatus.replaceChildren();
+
+                const summary = document.createElement("p");
+                summary.textContent = matches.length
+                    ? "We found " + matches.length +
+                    " matching product" + (matches.length === 1 ? "" : "s") +
+                    " for your preferences."
+                    : "No products match all your selections. Try a different stage, category or budget.";
+
+                wardrobeStatus.appendChild(summary);
+
+                const oldResults = document.getElementById("mmWardrobeMatches");
+                if (oldResults) oldResults.remove();
+
+                if (!matches.length) return;
+
+                const results = document.createElement("div");
+                results.className = "mm-wardrobe-matches";
+                results.id = "mmWardrobeMatches";
+
+                matches.forEach(function (card) {
+                    const link = document.createElement("a");
+                    link.className = "mm-wardrobe-match";
+                    link.href = "#shop-products";
+
+                    const name = card.dataset.name ||
+                        card.querySelector("h3")?.textContent.trim() ||
+                        "MellowMum product";
+
+                    const price = Number(card.dataset.price);
+
+                    const title = document.createElement("strong");
+                    title.textContent = name;
+
+                    const priceText = document.createElement("span");
+                    priceText.textContent = Number.isFinite(price)
+                        ? "₹" + price.toLocaleString("en-IN")
+                        : "";
+
+                    const action = document.createElement("span");
+                    action.textContent = "View product →";
+
+                    link.append(title, priceText, action);
+
+                    link.addEventListener("click", function () {
+                        card.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center"
+                        });
+
+                        card.classList.add("mm-wardrobe-highlight");
+
+                        window.setTimeout(function () {
+                            card.classList.remove("mm-wardrobe-highlight");
+                        }, 1800);
+                    });
+
+                    results.appendChild(link);
+                });
+
+                wardrobeStatus.appendChild(results);
+            });
+
+            if (wardrobeReset) {
+                wardrobeReset.addEventListener("click", function () {
+                    wardrobeForm.reset();
+                    wardrobeStatus.replaceChildren();
+
+                    const oldResults = document.getElementById("mmWardrobeMatches");
+                    if (oldResults) oldResults.remove();
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

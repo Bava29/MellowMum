@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MellowMum</title>
+
+    <meta name="description"
+        content="Discover comfortable and stylish maternity wear at MellowMum, designed for every stage of motherhood.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ==========================
+     MELLOWMUM HEADER
+========================== -->
+
+    <header class="mm-header">
+        <div class="mm-header-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="mm-logo" aria-label="MellowMum Home">
+                <img src="images/logo.png" alt="MellowMum">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="mm-desktop-nav" aria-label="Main navigation">
+                <a href="index.html" class="mm-nav-link active">Home 1</a>
+                <a href="home-2.html" class="mm-nav-link">Home 2</a>
+                <a href="about.html" class="mm-nav-link">About</a>
+                <a href="shop.html" class="mm-nav-link">Shop</a>
+                <a href="size-guide.html" class="mm-nav-link">Size Guide</a>
+                <a href="contact.html" class="mm-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="mm-desktop-actions">
+
+                <button class="mm-icon-btn" id="mm-desktop-theme" type="button" aria-label="Toggle dark mode"
+                    title="Dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="mm-icon-btn" id="mm-desktop-rtl" type="button" aria-label="Toggle RTL mode"
+                    title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="mm-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="mm-menu-toggle" id="mm-menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="mm-mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation -->
+        <div class="mm-mobile-menu" id="mm-mobile-menu" aria-hidden="true" inert>
+
+            <nav class="mm-mobile-nav" aria-label="Mobile navigation">
+                <a href="index.html" class="mm-mobile-link active">Home 1</a>
+                <a href="home-2.html" class="mm-mobile-link">Home 2</a>
+                <a href="about.html" class="mm-mobile-link">About</a>
+                <a href="shop.html" class="mm-mobile-link">Shop</a>
+                <a href="size-guide.html" class="mm-mobile-link">Size Guide</a>
+                <a href="contact.html" class="mm-mobile-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mm-mobile-settings">
+
+                <button class="mm-setting-btn" id="mm-mobile-theme" type="button">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="mm-setting-btn" id="mm-mobile-rtl" type="button">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL Mode</span>
+                </button>
+
+                <a href="login.html" class="mm-login-btn mm-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MELLOWMUM HERO -->
+    <section class="mm-hero" id="home">
+        <div class="mm-hero-shell">
+
+            <!-- LEFT: MATERNITY VISUAL -->
+            <div class="mm-hero-media">
+                <div class="mm-hero-arch"></div>
+
+                <div class="mm-hero-photo-wrap">
+                    <img src="images/maternity-model.jpg"
+                        alt="Expecting mother wearing an elegant dusty rose maternity dress" class="mm-hero-photo">
+                </div>
+
+                <div class="mm-hero-flower mm-hero-flower-one">✿</div>
+                <div class="mm-hero-flower mm-hero-flower-two">✿</div>
+
+                <div class="mm-hero-photo-note">
+                    <span class="mm-note-heart">♡</span>
+                    Made for your<br>
+                    <em>beautiful journey</em>
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="mm-hero-content">
+
+                <div class="mm-hero-eyebrow">
+                    <span></span>
+                    MATERNITY WEAR BOUTIQUE
+                </div>
+
+                <h1 class="mm-hero-title">
+                    Comfort Today
+                    <span>Brighter Tomorrows</span>
+                </h1>
+
+                <p class="mm-hero-description">
+                    Thoughtfully designed maternity wear that blends
+                    comfort, style and confidence for every stage of
+                    your motherhood journey.
+                </p>
+
+                <div class="mm-hero-actions">
+                    <a href="shop.html" class="mm-hero-btn mm-hero-btn-primary">
+                        Explore Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="about.html" class="mm-hero-btn mm-hero-btn-outline">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="mm-hero-benefits">
+
+                    <div class="mm-hero-benefit">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                        <span>Soft<br>Fabrics</span>
+                    </div>
+
+                    <div class="mm-hero-benefit">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Bump<br>Friendly</span>
+                    </div>
+
+                    <div class="mm-hero-benefit">
+                        <i class="fa-solid fa-spa"></i>
+                        <span>Everyday<br>Elegance</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================
+     WHY CHOOSE MELLOWMUM
+========================================= -->
+
+    <section class="mm-why-section" id="why-mellowmum">
+        <div class="mm-why-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="mm-why-content">
+
+                <div class="mm-why-eyebrow">
+                    <span></span>
+                    WHY CHOOSE MELLOWMUM
+                </div>
+
+                <h2 class="mm-why-title">
+                    Designed for
+                    <span>Every Chapter</span>
+                </h2>
+
+                <p class="mm-why-description">
+                    From the first bump to the little kicks and beyond,
+                    our maternity wear is crafted to keep you comfortable,
+                    confident and effortlessly stylish through it all.
+                </p>
+
+                <!-- BENEFIT CARDS -->
+                <div class="mm-why-benefits">
+
+                    <article class="mm-why-card">
+                        <div class="mm-why-icon">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <div class="mm-why-card-text">
+                            <h3>Ultra-Soft Fabrics</h3>
+                            <p>Gentle on your skin, designed for all-day comfort.</p>
+                        </div>
+                    </article>
+
+                    <article class="mm-why-card">
+                        <div class="mm-why-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="mm-why-card-text">
+                            <h3>Bump-Friendly Fit</h3>
+                            <p>Flexible designs that grow comfortably with you.</p>
+                        </div>
+                    </article>
+
+                    <article class="mm-why-card">
+                        <div class="mm-why-icon">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <div class="mm-why-card-text">
+                            <h3>Trendy & Timeless</h3>
+                            <p>Modern styles you'll love during and after pregnancy.</p>
+                        </div>
+                    </article>
+
+                    <article class="mm-why-card">
+                        <div class="mm-why-icon">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div class="mm-why-card-text">
+                            <h3>Everyday Elegance</h3>
+                            <p>Feel confident wherever your day takes you.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mm-why-actions">
+                    <a href="shop.html" class="mm-why-btn">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="about.html" class="mm-why-link">
+                        Learn More
+                        <span></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT VISUAL COMPOSITION -->
+            <div class="mm-why-visual">
+
+                <div class="mm-why-back-shape"></div>
+
+                <!-- Main maternity image -->
+                <div class="mm-why-main-image">
+                    <img src="images/why-choose.jpg" alt="Expecting mother in elegant maternity clothing"
+                        loading="lazy">
+                </div>
+
+                <!-- Floating customer badge -->
+                <div class="mm-why-stat">
+                    <div class="mm-why-stat-heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <strong>10K+</strong>
+                    <span>Happy Moms<br>and Counting</span>
+                </div>
+
+                <!-- Handwritten-style message -->
+                <div class="mm-why-note">
+                    <span>More Than</span>
+                    <span>Maternity Wear</span>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <!-- Small supporting image -->
+                <div class="mm-why-small-image">
+                    <img src="images/baby-essentials.jpg" alt="Soft baby clothes and newborn essentials" loading="lazy">
+                </div>
+
+                <span class="mm-why-decoration mm-why-decoration-one">✿</span>
+                <span class="mm-why-decoration mm-why-decoration-two">✧</span>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- =========================================
+     SECTION 3 - MATERNITY COLLECTION
+========================================= -->
+
+    <section class="mm-collection-section" id="maternity-collection">
+        <div class="mm-collection-container">
+
+            <!-- Section heading -->
+            <div class="mm-collection-heading">
+                <div class="mm-collection-eyebrow">
+                    <span></span>
+                    FIND YOUR PERFECT FIT
+                    <span></span>
+                </div>
+
+                <div class="mm-collection-heading-row">
+                    <h2 class="mm-collection-title">
+                        Made for Your
+                        <span>Beautiful Journey</span>
+                    </h2>
+
+                    <p class="mm-collection-intro">
+                        Thoughtfully designed pieces for every moment,
+                        from everyday comfort to special occasions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Asymmetric collection gallery -->
+            <div class="mm-collection-grid">
+
+                <!-- Large card -->
+                <article class="mm-collection-card mm-collection-card-large">
+                    <a href="shop.html?category=dresses" class="mm-collection-image-link"
+                        aria-label="Explore maternity dresses">
+
+                        <img src="images/maternity-dresses.jpg" alt="Elegant maternity dresses"
+                            class="mm-collection-image" loading="lazy">
+
+                        <span class="mm-collection-image-label">
+                            EVERYDAY FAVOURITES
+                        </span>
+                    </a>
+
+                    <div class="mm-collection-card-info">
+                        <div>
+                            <span class="mm-collection-number">01 / COLLECTION</span>
+                            <h3>Maternity Dresses</h3>
+                            <p>Effortless comfort, beautifully styled.</p>
+                        </div>
+
+                        <a href="shop.html?category=dresses" class="mm-collection-arrow"
+                            aria-label="Shop maternity dresses">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Top right card -->
+                <article class="mm-collection-card mm-collection-card-top">
+                    <a href="shop.html?category=everyday-wear" class="mm-collection-image-link"
+                        aria-label="Explore everyday maternity wear">
+
+                        <img src="images/maternity-everyday.jpg" alt="Comfortable everyday maternity outfit"
+                            class="mm-collection-image" loading="lazy">
+
+                        <span class="mm-collection-image-label">
+                            YOUR DAILY ESSENTIALS
+                        </span>
+                    </a>
+
+                    <div class="mm-collection-card-info">
+                        <div>
+                            <span class="mm-collection-number">02 / COLLECTION</span>
+                            <h3>Everyday Comfort</h3>
+                            <p>Soft styles for your daily routine.</p>
+                        </div>
+
+                        <a href="shop.html?category=everyday-wear" class="mm-collection-arrow"
+                            aria-label="Shop everyday maternity wear">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Bottom right card -->
+                <article class="mm-collection-card mm-collection-card-bottom">
+                    <a href="shop.html?category=nursing-wear" class="mm-collection-image-link"
+                        aria-label="Explore nursing wear">
+
+                        <img src="images/maternity-nursing.jpg" alt="Stylish nursing-friendly maternity clothing"
+                            class="mm-collection-image" loading="lazy">
+
+                        <span class="mm-collection-image-label">
+                            MADE FOR MOTHERHOOD
+                        </span>
+                    </a>
+
+                    <div class="mm-collection-card-info">
+                        <div>
+                            <span class="mm-collection-number">03 / COLLECTION</span>
+                            <h3>Maternity & Nursing</h3>
+                            <p>Thoughtful details for beyond the bump.</p>
+                        </div>
+
+                        <a href="shop.html?category=nursing-wear" class="mm-collection-arrow"
+                            aria-label="Shop nursing wear">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mm-collection-footer">
+                <p>
+                    Your comfort. Your style. Your journey.
+                </p>
+
+                <a href="shop.html" class="mm-collection-view-all">
+                    Explore All Collections
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: OUR STORY -->
+    <section class="mm-story-section" id="our-story">
+        <div class="mm-story-container">
+
+            <div class="mm-story-visual">
+                <div class="mm-story-image-main">
+                    <img src="images/mellowmum-story.jpg" alt="Mother enjoying a peaceful maternity moment">
+                </div>
+
+                <div class="mm-story-image-small">
+                    <img src="images/mellowmum-fabric.jpg" alt="Soft and breathable maternity fabric">
+                </div>
+
+                <div class="mm-story-stamp">
+                    <span class="mm-story-stamp-top">MADE WITH</span>
+                    <span class="mm-story-stamp-heart">♡</span>
+                    <span class="mm-story-stamp-bottom">A LITTLE MORE LOVE</span>
+                </div>
+
+                <div class="mm-story-image-caption">
+                    <span class="mm-story-caption-line"></span>
+                    <span>Comfort in every chapter</span>
+                </div>
+            </div>
+
+            <div class="mm-story-content">
+                <span class="mm-story-eyebrow">
+                    OUR HEART, YOUR JOURNEY
+                </span>
+
+                <h2>
+                    Because Motherhood
+                    <em>Deserves More Comfort.</em>
+                </h2>
+
+                <p class="mm-story-description">
+                    Motherhood changes so much, but feeling comfortable
+                    in your own skin should always remain. At MellowMum,
+                    we create thoughtful maternity wear that celebrates
+                    your changing body and makes every little moment feel
+                    a little more beautiful.
+                </p>
+
+                <div class="mm-story-promise">
+                    <span class="mm-story-promise-icon">♡</span>
+                    <div>
+                        <h3>Designed Around You</h3>
+                        <p>Thoughtful fits that move with your changing body.</p>
+                    </div>
+                </div>
+
+                <div class="mm-story-promise">
+                    <span class="mm-story-promise-icon">✿</span>
+                    <div>
+                        <h3>Softness You Can Feel</h3>
+                        <p>Comfort-first styles for your everyday moments.</p>
+                    </div>
+                </div>
+
+                <div class="mm-story-promise">
+                    <span class="mm-story-promise-icon">♡</span>
+                    <div>
+                        <h3>Made for Every Chapter</h3>
+                        <p>Pieces designed for pregnancy and beyond.</p>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mm-story-button">
+                    Get to Know Us
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mm-story-bottom-note">
+            <span>FEEL GOOD</span>
+            <span class="mm-story-note-dot"></span>
+            <span>LOOK BEAUTIFUL</span>
+            <span class="mm-story-note-dot"></span>
+            <span>BE YOURSELF</span>
+        </div>
+    </section>
+
+
+    <!-- SECTION 5: CUSTOMER TESTIMONIALS -->
+    <section class="mm-testimonials-section" id="testimonials">
+        <div class="mm-testimonials-container">
+
+            <div class="mm-testimonials-heading">
+                <span class="mm-testimonials-eyebrow">KIND WORDS, FULL HEARTS</span>
+
+                <h2>
+                    Loved by Moms,
+                    <em>Made for Moments.</em>
+                </h2>
+
+                <p>
+                    Real stories from moms who found a little more comfort
+                    and confidence with MellowMum.
+                </p>
+            </div>
+
+            <div class="mm-testimonials-layout">
+
+                <div class="mm-testimonial-featured">
+                    <span class="mm-testimonial-quote-mark">“</span>
+
+                    <div class="mm-testimonial-stars">★★★★★</div>
+
+                    <blockquote>
+                        “Finally, maternity clothes that feel as beautiful
+                        as they look. The fabric is so soft, and I feel
+                        comfortable throughout my entire day.”
+                    </blockquote>
+
+                    <div class="mm-testimonial-author">
+                        <div class="mm-testimonial-avatar">
+                            <img src="images/customer-ananya.jpg" alt="Customer Ananya">
+                        </div>
+                        <div>
+                            <h3>Ananya R.</h3>
+                            <p>Expecting Mom</p>
+                        </div>
+                    </div>
+
+                    <span class="mm-testimonial-featured-label">
+                        A MOM'S FAVOURITE
+                    </span>
+                </div>
+
+                <div class="mm-testimonials-side">
+
+                    <article class="mm-testimonial-card">
+                        <div class="mm-testimonial-card-top">
+                            <div class="mm-testimonial-stars">★★★★★</div>
+                            <span class="mm-testimonial-mark">“</span>
+                        </div>
+
+                        <blockquote>
+                            “I love how effortlessly the dresses fit.
+                            They make getting ready every morning so easy.”
+                        </blockquote>
+
+                        <div class="mm-testimonial-author">
+                            <div class="mm-testimonial-avatar">
+                                <img src="images/customer-priya.jpg" alt="Customer Priya">
+                            </div>
+                            <div>
+                                <h3>Priya M.</h3>
+                                <p>Mom-to-be</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="mm-testimonial-card">
+                        <div class="mm-testimonial-card-top">
+                            <div class="mm-testimonial-stars">★★★★★</div>
+                            <span class="mm-testimonial-mark">“</span>
+                        </div>
+
+                        <blockquote>
+                            “Practical, pretty, and genuinely comfortable.
+                            The nursing-friendly designs are such a thoughtful touch.”
+                        </blockquote>
+
+                        <div class="mm-testimonial-author">
+                            <div class="mm-testimonial-avatar">
+                                <img src="images/customer-sneha.jpg" alt="Customer Sneha">
+                            </div>
+                            <div>
+                                <h3>Sneha K.</h3>
+                                <p>New Mom</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="mm-testimonials-footer">
+                <span class="mm-testimonials-footer-heart">♡</span>
+                <p>Every mom deserves to feel comfortable, confident and cared for.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 6: THE MELLOWMUM DIFFERENCE -->
+    <section class="mm-difference-section" id="mellowmum-difference">
+        <div class="mm-difference-container">
+
+            <div class="mm-difference-intro">
+                <span class="mm-difference-eyebrow">THE LITTLE THINGS MATTER</span>
+
+                <h2>
+                    Thoughtful by Design.
+                    <em>Comfort by Nature.</em>
+                </h2>
+
+                <p>
+                    Every detail has a purpose, because you deserve clothes
+                    that feel as good as this journey should.
+                </p>
+
+                <a href="shop.html" class="mm-difference-link">
+                    Explore Our Collection <span>↗</span>
+                </a>
+            </div>
+
+            <div class="mm-difference-details">
+
+                <article class="mm-difference-item">
+                    <div class="mm-difference-number">01</div>
+                    <div class="mm-difference-item-content">
+                        <span class="mm-difference-symbol">✿</span>
+                        <h3>Softness First</h3>
+                        <p>
+                            Gentle-feeling fabrics chosen for everyday comfort,
+                            from slow mornings to busy afternoons.
+                        </p>
+                    </div>
+                    <div class="mm-difference-item-note">FEEL THE DIFFERENCE</div>
+                </article>
+
+                <article class="mm-difference-item">
+                    <div class="mm-difference-number">02</div>
+                    <div class="mm-difference-item-content">
+                        <span class="mm-difference-symbol">♡</span>
+                        <h3>A Fit That Understands</h3>
+                        <p>
+                            Thoughtful silhouettes designed with your changing
+                            shape and comfort in mind.
+                        </p>
+                    </div>
+                    <div class="mm-difference-item-note">MADE FOR YOUR JOURNEY</div>
+                </article>
+
+                <article class="mm-difference-item">
+                    <div class="mm-difference-number">03</div>
+                    <div class="mm-difference-item-content">
+                        <span class="mm-difference-symbol">❋</span>
+                        <h3>Style Without Compromise</h3>
+                        <p>
+                            Feminine, versatile pieces that help you feel
+                            like yourself through every chapter.
+                        </p>
+                    </div>
+                    <div class="mm-difference-item-note">YOUR STYLE, ALWAYS</div>
+                </article>
+
+            </div>
+
+            <div class="mm-difference-bottom">
+                <span class="mm-difference-bottom-icon">♡</span>
+                <p>Because taking care of yourself is part of the journey, too.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 7: SHOP BY OCCASION -->
+    <section class="mm-occasion-section" id="shop-by-occasion">
+        <div class="mm-occasion-container">
+
+            <div class="mm-occasion-heading">
+                <div>
+                    <span class="mm-occasion-eyebrow">DRESSED FOR YOUR JOURNEY</span>
+                    <h2>
+                        Every Moment,
+                        <em>Your Kind of Beautiful.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    From everyday essentials to special moments,
+                    find pieces that feel just right for you.
+                </p>
+            </div>
+
+            <div class="mm-occasion-grid">
+
+                <a href="shop.html?category=everyday" class="mm-occasion-card mm-occasion-card-tall">
+                    <img src="images/occasion-everyday.jpg" alt="Comfortable everyday maternity wear">
+
+                    <span class="mm-occasion-card-overlay"></span>
+
+                    <div class="mm-occasion-card-content">
+                        <span class="mm-occasion-card-number">01 / EVERYDAY</span>
+                        <h3>Everyday<br>Ease</h3>
+                        <p>Soft styles for your little everyday moments.</p>
+                        <span class="mm-occasion-card-link">
+                            Explore Everyday Wear <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="shop.html?category=workwear" class="mm-occasion-card mm-occasion-card-middle">
+                    <img src="images/occasion-workwear.jpg" alt="Elegant maternity workwear outfit">
+
+                    <span class="mm-occasion-card-overlay"></span>
+
+                    <div class="mm-occasion-card-content">
+                        <span class="mm-occasion-card-number">02 / WORK & OUTINGS</span>
+                        <h3>Grace in<br>Motion</h3>
+                        <p>Feel polished, wherever the day takes you.</p>
+                        <span class="mm-occasion-card-link">
+                            Discover Workwear <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="shop.html?category=special-occasions" class="mm-occasion-card mm-occasion-card-tall">
+                    <img src="images/occasion-special.jpg" alt="Elegant maternity outfit for a special occasion">
+
+                    <span class="mm-occasion-card-overlay"></span>
+
+                    <div class="mm-occasion-card-content">
+                        <span class="mm-occasion-card-number">03 / SPECIAL MOMENTS</span>
+                        <h3>Moments to<br>Treasure</h3>
+                        <p>Beautiful looks for memories worth keeping.</p>
+                        <span class="mm-occasion-card-link">
+                            Shop Special Styles <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="mm-occasion-footer">
+                <span class="mm-occasion-footer-line"></span>
+                <p>Whatever the occasion, make room for comfort.</p>
+                <span class="mm-occasion-footer-heart">♡</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 8: FINAL CTA & NEWSLETTER -->
+    <section class="mm-journey-section" id="join-our-journey">
+        <div class="mm-journey-container">
+
+            <div class="mm-journey-decoration mm-journey-decoration-left">♡</div>
+            <div class="mm-journey-decoration mm-journey-decoration-right">✿</div>
+
+            <div class="mm-journey-content">
+                <span class="mm-journey-eyebrow">
+                    A LITTLE NOTE FROM US
+                </span>
+
+                <h2>
+                    Your Journey Is Beautiful.
+                    <em>Let’s Dress It That Way.</em>
+                </h2>
+
+                <p class="mm-journey-description">
+                    Celebrate every little change, every new beginning,
+                    and every beautiful moment with maternity wear
+                    made with you in mind.
+                </p>
+
+                <a href="shop.html" class="mm-journey-shop-button">
+                    Find Your Feel-Good Fit
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <div class="mm-journey-divider">
+                <span></span>
+                <span class="mm-journey-divider-heart">♡</span>
+                <span></span>
+            </div>
+
+            <div class="mm-journey-newsletter">
+                <div class="mm-journey-newsletter-copy">
+                    <span class="mm-journey-newsletter-label">
+                        NOTES, LOVE & LITTLE PERKS
+                    </span>
+
+                    <h3>A Softer Inbox Starts Here.</h3>
+
+                    <p>
+                        Get new arrivals, styling inspiration and
+                        little updates from MellowMum.
+                    </p>
+                </div>
+
+                <form class="mm-journey-form" action="#" method="post">
+                    <label for="mm-journey-email" class="mm-journey-sr-only">
+                        Your email address
+                    </label>
+
+                    <input type="email" id="mm-journey-email" name="email" placeholder="Enter your email address"
+                        required>
+
+                    <button type="submit">
+                        Count Me In
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+
+            </div>
+
+            <div class="mm-journey-bottom-note">
+                <span>MADE FOR MOTHERHOOD</span>
+                <span class="mm-journey-bottom-heart">♡</span>
+                <span>MADE WITH LOVE</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==============================
+     MELLOWMUM FOOTER
+============================== -->
+
+    <footer class="mm-footer">
+
+        <div class="mm-footer-main">
+
+            <!-- Brand Information -->
+            <div class="mm-footer-brand">
+                <a href="index.html" class="mm-footer-logo">
+                    <img src="images/logo-white.png" alt="MellowMum">
+                </a>
+
+                <p>
+                    Comfort, confidence and care in every chapter
+                    of your motherhood journey. Discover maternity
+                    wear designed to move with you.
+                </p>
+
+                <div class="mm-footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mm-footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Shop Categories -->
+            <div class="mm-footer-column">
+                <h3>Explore Shop</h3>
+                <ul>
+                    <li><a href="shop.html?category=workwear">Maternity Workwear</a></li>
+                    <li><a href="shop.html?category=casual">Casual Wear</a></li>
+                    <li><a href="shop.html?category=nursing">Nursing Wear</a></li>
+                    <li><a href="shop.html?category=trimester">Trimester Collections</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mm-footer-column mm-footer-contact">
+                <h3>Get in Touch</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your store address here</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:hello@mellowmum.com">
+                        hello@mellowmum.com
+                    </a>
+                </p>
+
+                <a href="contact.html" class="mm-footer-contact-btn">
+                    Visit Our Store
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mm-footer-bottom">
+            <p>
+                &copy; <span id="mm-footer-year"></span>
+                MellowMum. All rights reserved.
+            </p>
+
+            <div class="mm-footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

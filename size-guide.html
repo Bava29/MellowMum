@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MellowMum</title>
+
+    <meta name="description"
+        content="Discover comfortable and stylish maternity wear at MellowMum, designed for every stage of motherhood.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ==========================
+     MELLOWMUM HEADER
+========================== -->
+
+    <header class="mm-header">
+        <div class="mm-header-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="mm-logo" aria-label="MellowMum Home">
+                <img src="images/logo.png" alt="MellowMum">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="mm-desktop-nav" aria-label="Main navigation">
+                <a href="index.html" class="mm-nav-link">Home 1</a>
+                <a href="home-2.html" class="mm-nav-link">Home 2</a>
+                <a href="about.html" class="mm-nav-link">About</a>
+                <a href="shop.html" class="mm-nav-link">Shop</a>
+                <a href="size-guide.html" class="mm-nav-link active">Size Guide</a>
+                <a href="contact.html" class="mm-nav-link ">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="mm-desktop-actions">
+
+                <button class="mm-icon-btn" id="mm-desktop-theme" type="button" aria-label="Toggle dark mode"
+                    title="Dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="mm-icon-btn" id="mm-desktop-rtl" type="button" aria-label="Toggle RTL mode"
+                    title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="mm-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="mm-menu-toggle" id="mm-menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="mm-mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation -->
+        <div class="mm-mobile-menu" id="mm-mobile-menu" aria-hidden="true" inert>
+
+            <nav class="mm-mobile-nav" aria-label="Mobile navigation">
+                <a href="index.html" class="mm-mobile-link">Home 1</a>
+                <a href="home-2.html" class="mm-mobile-link">Home 2</a>
+                <a href="about.html" class="mm-mobile-link">About</a>
+                <a href="shop.html" class="mm-mobile-link">Shop</a>
+                <a href="size-guide.html" class="mm-mobile-link active">Size Guide</a>
+                <a href="contact.html" class="mm-mobile-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mm-mobile-settings">
+
+                <button class="mm-setting-btn" id="mm-mobile-theme" type="button">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="mm-setting-btn" id="mm-mobile-rtl" type="button">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL Mode</span>
+                </button>
+
+                <a href="login.html" class="mm-login-btn mm-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- COMMON INNER PAGE HERO -->
+    <section class="mm-inner-hero sg-banner" id="page-hero">
+
+        <div class="mm-inner-hero-overlay"></div>
+
+        <div class="mm-inner-hero-content">
+
+            <span class="mm-inner-hero-eyebrow">
+                FIND YOUR PERFECT FIT
+            </span>
+
+            <h1>Comfort with the Right Fit</h1>
+
+            <p>
+                Find your measurements, explore our size chart, and choose maternity wear that feels comfortable through
+                every stage of your journey.
+            </p>
+
+            <nav class="mm-inner-hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Size Guide</span>
+            </nav>
+
+        </div>
+
+        <span class="mm-inner-hero-decoration mm-inner-hero-decoration-one" aria-hidden="true">♡</span>
+
+        <span class="mm-inner-hero-decoration mm-inner-hero-decoration-two" aria-hidden="true">✳</span>
+
+    </section>
+
+
+    <!-- SECTION 2: HOW TO MEASURE YOURSELF -->
+    <section class="sg-measure-section" id="how-to-measure">
+        <div class="sg-measure-inner">
+
+            <div class="sg-measure-intro">
+                <span class="sg-measure-eyebrow">YOUR PERFECT FIT</span>
+
+                <h2>Three Simple Steps to Find Your Fit</h2>
+
+                <p class="sg-measure-description">
+                    Your body is changing beautifully. Take a few gentle measurements
+                    to help find the maternity pieces that feel right for you.
+                </p>
+
+                <div class="sg-measure-unit">
+                    <span class="sg-measure-unit-label">Measurements in</span>
+                    <div class="sg-measure-unit-switch" role="group" aria-label="Measurement unit">
+                        <button class="sg-measure-unit-btn is-active" type="button" data-unit="cm"
+                            aria-pressed="true">CM</button>
+                        <button class="sg-measure-unit-btn" type="button" data-unit="in"
+                            aria-pressed="false">INCHES</button>
+                    </div>
+                </div>
+
+                <div class="sg-measure-note">
+                    <span class="sg-measure-note-mark">✳</span>
+                    <p>
+                        Keep the measuring tape comfortably snug, not tight.
+                        Measure over lightweight clothing for a more consistent result.
+                    </p>
+                </div>
+
+
+                <div class="sg-measure-image">
+                    <img src="images/size-guide-measurement.jpg" alt="MellowMum maternity wear and everyday comfort"
+                        loading="lazy" />
+                    <div class="sg-measure-image-caption">
+                        <span>COMFORT IN EVERY CHAPTER</span>
+                        <p>Made to grow with you.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sg-measure-steps">
+
+                <article class="sg-measure-step">
+                    <div class="sg-measure-step-top">
+                        <span class="sg-measure-number">01</span>
+                        <span class="sg-measure-line"></span>
+                        <span class="sg-measure-step-tag">UPPER BODY</span>
+                    </div>
+
+                    <div class="sg-measure-step-content">
+                        <div class="sg-measure-step-copy">
+                            <h3>Bust</h3>
+                            <p>
+                                Wrap the tape around the fullest part of your bust.
+                                Keep the tape level across your back.
+                            </p>
+                        </div>
+                        <div class="sg-measure-illustration sg-measure-bust" aria-hidden="true">
+                            <span class="sg-measure-figure"></span>
+                            <span class="sg-measure-tape"></span>
+                        </div>
+                    </div>
+
+                    <div class="sg-measure-example">
+                        <span>Example measurement</span>
+                        <strong data-cm="92 cm" data-in="36.2 in">92 cm</strong>
+                    </div>
+                </article>
+
+                <article class="sg-measure-step">
+                    <div class="sg-measure-step-top">
+                        <span class="sg-measure-number">02</span>
+                        <span class="sg-measure-line"></span>
+                        <span class="sg-measure-step-tag">MID BODY</span>
+                    </div>
+
+                    <div class="sg-measure-step-content">
+                        <div class="sg-measure-step-copy">
+                            <h3>Waist</h3>
+                            <p>
+                                Measure around your natural waist or the point
+                                specified by the garment's size chart.
+                            </p>
+                        </div>
+                        <div class="sg-measure-illustration sg-measure-waist" aria-hidden="true">
+                            <span class="sg-measure-figure"></span>
+                            <span class="sg-measure-tape"></span>
+                        </div>
+                    </div>
+
+                    <div class="sg-measure-example">
+                        <span>Example measurement</span>
+                        <strong data-cm="76 cm" data-in="29.9 in">76 cm</strong>
+                    </div>
+                </article>
+
+                <article class="sg-measure-step">
+                    <div class="sg-measure-step-top">
+                        <span class="sg-measure-number">03</span>
+                        <span class="sg-measure-line"></span>
+                        <span class="sg-measure-step-tag">LOWER BODY</span>
+                    </div>
+
+                    <div class="sg-measure-step-content">
+                        <div class="sg-measure-step-copy">
+                            <h3>Hips</h3>
+                            <p>
+                                Stand with your feet together and measure around
+                                the fullest part of your hips and seat.
+                            </p>
+                        </div>
+                        <div class="sg-measure-illustration sg-measure-hips" aria-hidden="true">
+                            <span class="sg-measure-figure"></span>
+                            <span class="sg-measure-tape"></span>
+                        </div>
+                    </div>
+
+                    <div class="sg-measure-example">
+                        <span>Example measurement</span>
+                        <strong data-cm="100 cm" data-in="39.4 in">100 cm</strong>
+                    </div>
+                </article>
+
+                <div class="sg-measure-footer">
+                    <p>Measurements taken? Let's find your size.</p>
+                    <a href="#size-chart" class="sg-measure-cta">
+                        Explore the Size Chart <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: MATERNITY SIZE CHART -->
+    <section class="sg-chart-section" id="size-chart">
+        <div class="sg-chart-container">
+
+            <div class="sg-chart-heading">
+                <span class="sg-chart-eyebrow">YOUR SIZE, MADE SIMPLE</span>
+                <h2>Find Your Comfortable Fit</h2>
+                <p>
+                    Compare your measurements with the size chart for the garment
+                    you're interested in. Choose the unit that works best for you.
+                </p>
+            </div>
+
+            <div class="sg-chart-toolbar">
+                <div class="sg-chart-guide">
+                    <span class="sg-chart-guide-icon" aria-hidden="true">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </span>
+                    <div>
+                        <strong>Compare your measurements</strong>
+                        <p>Use a soft measuring tape for the best comparison.</p>
+                    </div>
+                </div>
+
+                <div class="sg-chart-unit" role="group" aria-label="Choose measurement unit">
+                    <button type="button" class="sg-chart-unit-btn is-active" data-chart-unit="cm"
+                        aria-pressed="true">CM</button>
+                    <button type="button" class="sg-chart-unit-btn" data-chart-unit="in"
+                        aria-pressed="false">INCHES</button>
+                </div>
+            </div>
+
+            <div class="sg-chart-table-wrap">
+                <table class="sg-chart-table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Size</th>
+                            <th scope="col">Bust</th>
+                            <th scope="col">Waist</th>
+                            <th scope="col">Hips</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">S</th>
+                            <td data-cm="86" data-in="33.9">86</td>
+                            <td data-cm="70" data-in="27.6">70</td>
+                            <td data-cm="94" data-in="37.0">94</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">M</th>
+                            <td data-cm="92" data-in="36.2">92</td>
+                            <td data-cm="76" data-in="29.9">76</td>
+                            <td data-cm="100" data-in="39.4">100</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">L</th>
+                            <td data-cm="98" data-in="38.6">98</td>
+                            <td data-cm="82" data-in="32.3">82</td>
+                            <td data-cm="106" data-in="41.7">106</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">XL</th>
+                            <td data-cm="106" data-in="41.7">106</td>
+                            <td data-cm="90" data-in="35.4">90</td>
+                            <td data-cm="114" data-in="44.9">114</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">XXL</th>
+                            <td data-cm="114" data-in="44.9">114</td>
+                            <td data-cm="98" data-in="38.6">98</td>
+                            <td data-cm="122" data-in="48.0">122</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sg-chart-footnotes">
+                <div class="sg-chart-note">
+                    <span class="sg-chart-note-icon" aria-hidden="true">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </span>
+                    <p>
+                        <strong>Check all three measurements.</strong>
+                        If they fall into different size rows, review the product's
+                        individual fit notes before choosing.
+                    </p>
+                </div>
+
+                <div class="sg-chart-note">
+                    <span class="sg-chart-note-icon" aria-hidden="true">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <p>
+                        <strong>Comfort comes first.</strong>
+                        Maternity fit can vary by style, fabric and design.
+                        Always follow the product-specific size guidance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sg-chart-bottom">
+                <div>
+                    <h3>Need help choosing your size?</h3>
+                    <p>Our team can help you understand the fit before you order.</p>
+                </div>
+                <a href="contact.html" class="sg-chart-cta">
+                    Get Size Assistance <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: A FIT FOR EVERY STAGE -->
+    <section class="sg-stage-section" id="maternity-stages">
+        <div class="sg-stage-container">
+
+            <div class="sg-stage-heading">
+                <span class="sg-stage-eyebrow">COMFORT THROUGH EVERY CHANGE</span>
+                <h2>A Fit for Every Stage</h2>
+                <p>
+                    Your body has its own beautiful timeline. Discover the fit
+                    considerations that can help you feel comfortable as it changes.
+                </p>
+            </div>
+
+            <div class="sg-stage-grid">
+
+                <article class="sg-stage-card">
+                    <div class="sg-stage-image">
+                        <img src="images/first-trimester.jpg" alt="Maternity style for early pregnancy"
+                            loading="lazy" />
+                        <span class="sg-stage-number">01</span>
+                    </div>
+                    <div class="sg-stage-content">
+                        <span class="sg-stage-label">THE EARLY CHAPTER</span>
+                        <h3>First Trimester</h3>
+                        <p>
+                            Choose soft fabrics and comfortable everyday silhouettes
+                            that feel gentle on your body.
+                        </p>
+                        <div class="sg-stage-tip">
+                            <span class="sg-stage-tip-mark">✳</span>
+                            <p><strong>Fit tip</strong> — Prioritise comfort around the waist.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="sg-stage-card">
+                    <div class="sg-stage-image">
+                        <img src="images/second-trimester.jpg" alt="Maternity style for a growing bump"
+                            loading="lazy" />
+                        <span class="sg-stage-number">02</span>
+                    </div>
+                    <div class="sg-stage-content">
+                        <span class="sg-stage-label">THE GROWING CHAPTER</span>
+                        <h3>Second Trimester</h3>
+                        <p>
+                            Look for flexible waistbands, gentle stretch and room
+                            to move comfortably as your bump grows.
+                        </p>
+                        <div class="sg-stage-tip">
+                            <span class="sg-stage-tip-mark">✳</span>
+                            <p><strong>Fit tip</strong> — Check the garment's bump allowance.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="sg-stage-card">
+                    <div class="sg-stage-image">
+                        <img src="images/third-trimester.jpg" alt="Comfortable maternity style for later pregnancy"
+                            loading="lazy" />
+                        <span class="sg-stage-number">03</span>
+                    </div>
+                    <div class="sg-stage-content">
+                        <span class="sg-stage-label">THE COMFORT CHAPTER</span>
+                        <h3>Third Trimester</h3>
+                        <p>
+                            Consider breathable materials and thoughtfully designed
+                            silhouettes that allow extra room where you need it.
+                        </p>
+                        <div class="sg-stage-tip">
+                            <span class="sg-stage-tip-mark">✳</span>
+                            <p><strong>Fit tip</strong> — Use the garment-specific size chart.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="sg-stage-bottom">
+                <p>Every pregnancy is different. Your comfort comes first.</p>
+                <a href="shop.html" class="sg-stage-cta">
+                    Explore the Collection <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 5: SIZE GUIDE FAQ -->
+    <section class="sg-faq-section" id="size-faq">
+        <div class="sg-faq-container">
+
+            <div class="sg-faq-intro">
+                <span class="sg-faq-eyebrow">A LITTLE EXTRA GUIDANCE</span>
+                <h2>Questions About Your Fit?</h2>
+                <p>
+                    Finding your size should feel simple. Here are a few helpful
+                    answers to guide you towards a more comfortable fit.
+                </p>
+
+                <div class="sg-faq-help-card">
+                    <span class="sg-faq-help-icon" aria-hidden="true">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <h3>Still need a little help?</h3>
+                    <p>
+                        We're here to help you understand your measurements
+                        and find the right fit for your needs.
+                    </p>
+                    <a href="contact.html" class="sg-faq-contact-btn">
+                        Contact Our Team <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sg-faq-list">
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>Should I choose my usual clothing size?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Start by checking the size chart for the specific garment.
+                            Some maternity styles follow pre-pregnancy sizing, while
+                            others may have different fit guidance. Follow the product's
+                            own size information before choosing.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>What if my measurements fall between two sizes?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Compare your bust, waist and hip measurements with the
+                            garment's size chart. Consider the fabric stretch and the
+                            fit you prefer. If you're still unsure, contact our team
+                            before placing your order.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>How often should I take my measurements?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Your measurements may change throughout pregnancy.
+                            Recheck them whenever your current clothes start feeling
+                            different or before buying a new style, especially if
+                            you've noticed a change in fit.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>Which measurements should I check first?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Check all the measurements listed on the product's size
+                            chart. Bust, waist and hips are common measurements, but
+                            the most important ones can vary by garment.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>What should I do if my order doesn't fit comfortably?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Review the store's return and exchange policy before
+                            purchasing. If you need help, contact our team with the
+                            product name and your measurements so we can guide you
+                            through the available options.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>Can I wear maternity clothes after pregnancy?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Yes! Many maternity styles are designed for comfort and flexibility,
+                            making them suitable for postpartum wear too. Check the individual
+                            product details to learn more about its fit and features.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sg-faq-item">
+                    <summary>
+                        <span>What should I do if I am between two sizes?</span>
+                        <span class="sg-faq-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sg-faq-answer">
+                        <p>
+                            Check our Size Guide and the product's fit details before choosing.
+                            Consider the garment's stretch, design, and your comfort. If you
+                            are still unsure, contact our team for help selecting a suitable size.
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 6: SIZE GUIDE HELP CTA -->
+    <section class="sg-help-section" id="size-help">
+        <div class="sg-help-container">
+
+            <div class="sg-help-content">
+                <span class="sg-help-eyebrow">WE'RE HERE FOR YOU</span>
+
+                <h2>Still Unsure About Your Size?</h2>
+
+                <p>
+                    Every pregnancy journey is unique, and finding the right fit
+                    should feel simple. We're here to help you choose maternity
+                    wear that feels comfortable and supports you through every stage.
+                </p>
+
+                <div class="sg-help-points">
+                    <div class="sg-help-point">
+                        <span class="sg-help-check" aria-hidden="true">✓</span>
+                        <span>Get help choosing the right size</span>
+                    </div>
+
+                    <div class="sg-help-point">
+                        <span class="sg-help-check" aria-hidden="true">✓</span>
+                        <span>Explore styles for every trimester</span>
+                    </div>
+
+                    <div class="sg-help-point">
+                        <span class="sg-help-check" aria-hidden="true">✓</span>
+                        <span>Find your comfortable fit with confidence</span>
+                    </div>
+                </div>
+
+                <div class="sg-help-actions">
+                    <a href="shop.html" class="sg-help-primary">
+                        Explore Collection
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="contact.html" class="sg-help-secondary">
+                        Contact Our Team
+                    </a>
+                </div>
+            </div>
+
+            <div class="sg-help-visual">
+                <div class="sg-help-image-wrap">
+                    <img src="images/maternity-size-help.jpg" alt="Comfortable maternity clothing for expecting mothers"
+                        loading="lazy">
+                </div>
+
+                <div class="sg-help-note">
+                    <span class="sg-help-note-icon" aria-hidden="true">♡</span>
+                    <div>
+                        <strong>Your Comfort Comes First</strong>
+                        <p>Made for your changing journey.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==============================
+     MELLOWMUM FOOTER
+============================== -->
+
+    <footer class="mm-footer">
+
+        <div class="mm-footer-main">
+
+            <!-- Brand Information -->
+            <div class="mm-footer-brand">
+                <a href="index.html" class="mm-footer-logo">
+                    <img src="images/logo-white.png" alt="MellowMum">
+                </a>
+
+                <p>
+                    Comfort, confidence and care in every chapter
+                    of your motherhood journey. Discover maternity
+                    wear designed to move with you.
+                </p>
+
+                <div class="mm-footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mm-footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Shop Categories -->
+            <div class="mm-footer-column">
+                <h3>Explore Shop</h3>
+                <ul>
+                    <li><a href="shop.html?category=workwear">Maternity Workwear</a></li>
+                    <li><a href="shop.html?category=casual">Casual Wear</a></li>
+                    <li><a href="shop.html?category=nursing">Nursing Wear</a></li>
+                    <li><a href="shop.html?category=trimester">Trimester Collections</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mm-footer-column mm-footer-contact">
+                <h3>Get in Touch</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your store address here</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:hello@mellowmum.com">
+                        hello@mellowmum.com
+                    </a>
+                </p>
+
+                <a href="contact.html" class="mm-footer-contact-btn">
+                    Visit Our Store
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mm-footer-bottom">
+            <p>
+                &copy; <span id="mm-footer-year"></span>
+                MellowMum. All rights reserved.
+            </p>
+
+            <div class="mm-footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

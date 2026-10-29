@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MellowMum</title>
+
+    <meta name="description"
+        content="Discover comfortable and stylish maternity wear at MellowMum, designed for every stage of motherhood.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+
+    <main class="mm-auth-page">
+
+        <!-- Theme and RTL Controls -->
+        <div class="mm-auth-topbar">
+            <div class="mm-auth-tools">
+
+                <button type="button" class="mm-auth-tool" id="mmThemeToggle" aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="mm-auth-tool mm-rtl-toggle" id="mmRtlToggle" aria-label="Toggle RTL"
+                    title="Toggle RTL" aria-pressed="false">
+
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Register Card -->
+        <section class="mm-auth-card mm-register-card" aria-labelledby="mmRegisterTitle">
+
+            <!-- Logo -->
+            <a href="index.html" class="mm-auth-logo-link" aria-label="MellowMum home">
+
+                <img src="images/logo.png" alt="MellowMum" class="mm-auth-logo" onerror="this.style.display='none';">
+
+            </a>
+
+            <!-- Heading -->
+            <div class="mm-auth-heading">
+
+                <span class="mm-auth-eyebrow">
+                    YOUR JOURNEY STARTS HERE
+                </span>
+
+                <h1 id="mmRegisterTitle">
+                    Create Your <span>Account.</span>
+                </h1>
+
+                <p>
+                    Join MellowMum for comfort
+                    made for every stage of motherhood.
+                </p>
+
+            </div>
+
+            <!-- Register Form -->
+            <form id="mmRegisterForm" class="mm-auth-form">
+
+                <!-- Full Name -->
+                <div class="mm-auth-field">
+
+                    <label for="mmRegisterName">
+                        Full Name <span>*</span>
+                    </label>
+
+                    <input type="text" id="mmRegisterName" name="name" placeholder="Enter your full name"
+                        autocomplete="name" required>
+
+                </div>
+
+                <!-- Email -->
+                <div class="mm-auth-field">
+
+                    <label for="mmRegisterEmail">
+                        Email Address <span>*</span>
+                    </label>
+
+                    <input type="email" id="mmRegisterEmail" name="email" placeholder="you@example.com"
+                        autocomplete="email" required>
+
+                </div>
+
+                <!-- Password -->
+                <div class="mm-auth-field">
+
+                    <label for="mmRegisterPassword">
+                        Password <span>*</span>
+                    </label>
+
+                    <div class="mm-password-wrap">
+
+                        <input type="password" id="mmRegisterPassword" name="password" placeholder="Create a password"
+                            autocomplete="new-password" minlength="8" required>
+
+                        <button type="button" class="mm-password-toggle" data-password-target="mmRegisterPassword"
+                            aria-label="Show password" aria-pressed="false">
+
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mm-auth-field">
+
+                    <label for="mmRegisterConfirmPassword">
+                        Confirm Password <span>*</span>
+                    </label>
+
+                    <div class="mm-password-wrap">
+
+                        <input type="password" id="mmRegisterConfirmPassword" name="confirmPassword"
+                            placeholder="Re-enter your password" autocomplete="new-password" minlength="8" required>
+
+                        <button type="button" class="mm-password-toggle"
+                            data-password-target="mmRegisterConfirmPassword" aria-label="Show password"
+                            aria-pressed="false">
+
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <label class="mm-register-terms">
+
+                    <input type="checkbox" id="mmRegisterTerms" name="terms" required>
+
+                    <span>
+                        I agree to the
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                        and
+                        <a href="privacy.html">Privacy Policy</a>.
+                    </span>
+
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit" class="mm-auth-submit">
+
+                    Create Account
+
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+
+                </button>
+
+                <p id="mmRegisterStatus" class="mm-auth-status" role="status" aria-live="polite"></p>
+
+            </form>
+
+            <!-- Social Signup Divider -->
+            <div class="mm-auth-divider">
+
+                <span></span>
+
+                <p>Or sign up with</p>
+
+                <span></span>
+
+            </div>
+
+            <!-- Social Signup Buttons -->
+            <div class="mm-social-login">
+
+                <button type="button" class="mm-social-btn mm-social-facebook" data-social="Facebook"
+                    aria-label="Sign up with Facebook">
+
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+
+                </button>
+
+                <button type="button" class="mm-social-btn mm-social-apple" data-social="Apple"
+                    aria-label="Sign up with Apple">
+
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+
+                </button>
+
+                <button type="button" class="mm-social-btn mm-social-google" data-social="Google"
+                    aria-label="Sign up with Google">
+
+                    <img src="images/google-logo.svg" alt="" class="mm-social-svg">
+
+                </button>
+
+            </div>
+
+            <!-- Login Link -->
+            <p class="mm-auth-switch">
+                Already have an account?
+                <a href="login.html">Log in</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Shared Authentication JavaScript -->
+    <script src="js/auth.js"></script>
+
+
+</body>
+
+</html>
