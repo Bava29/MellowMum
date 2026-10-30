@@ -18,7 +18,7 @@
 /* Reset */
 * {
     margin: 0;
-    padding: 12px 0 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -471,7 +471,7 @@ html.dark-mode .mm-setting-btn {
 ============================== */
 
 html[dir="rtl"] .mm-logo {
-    justify-self: end;
+    justify-self: start;
 }
 
 html[dir="rtl"] .mm-logo img {
@@ -19280,6 +19280,10 @@ html[dir="rtl"] .mm-location-button {
         padding: 0;
     }
 
+    .mm-about-faq-intro {
+        position: static;
+    }
+
     .mm-about-faq-intro h2 {
         font-size: 37px;
     }
@@ -19928,6 +19932,10 @@ html[dir="rtl"] .mm-location-button {
         padding: 0;
     }
 
+    .mm-about-faq-intro {
+        position: static;
+    }
+
     .mm-about-faq-intro h2 {
         font-size: 32px;
         line-height: 1.3;
@@ -19970,6 +19978,18 @@ html[dir="rtl"] .mm-location-button {
     .mm-about-faq-list {
         width: 100%;
         min-width: 0;
+    }
+
+    .mm-about-faq-answer-inner {
+        min-height: 0;
+    }
+
+    .mm-about-faq-item:not(.active) .mm-about-faq-answer-inner {
+        visibility: hidden;
+    }
+
+    .mm-about-faq-item.active .mm-about-faq-answer-inner {
+        visibility: visible;
     }
 
     .mm-about-faq-item {
@@ -22155,4 +22175,1731 @@ html[dir="rtl"] .wishlist-button {
 /* Dark Mode - White Logo */
 html.dark-mode .mm-logo img {
     content: url("../images/logo-white.png");
+}
+
+/* IPAD PRO — SECTION 2 CATEGORY CARDS */
+@media (min-width: 761px) and (max-width: 1024px) {
+
+    .mm2-edit-categories {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .mm2-edit-category:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 16px) / 2);
+        justify-self: center;
+    }
+
+}
+
+/* IPAD PRO - FABRIC STORY CARDS */
+@media (min-width: 761px) and (max-width: 1024px) {
+
+    .mm2-fabric-showcase {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .mm2-fabric-card:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 20px) / 2);
+        justify-self: center;
+    }
+
+}
+
+/* IPAD PRO — CTA EMAIL FORM */
+@media (min-width: 761px) and (max-width: 1024px) {
+
+    .mm2-cta-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 10px;
+        border-radius: 22px;
+    }
+
+    .mm2-cta-email-wrap {
+        display: flex;
+        width: 100%;
+        min-height: 45px;
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
+    .mm2-cta-email-wrap input {
+        width: 100%;
+        min-width: 0;
+        min-height: 45px;
+    }
+
+    .mm2-cta-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-start;
+        width: auto;
+        min-height: 46px;
+        padding: 12px 18px;
+        white-space: nowrap;
+    }
+
+}
+
+/* =========================================
+   ABOUT PAGE — TIMELINE LINE ALIGNMENT
+========================================= */
+
+/* IPAD PRO */
+@media (min-width: 761px) and (max-width: 1024px) {
+    .mm-about-journey-timeline::before {
+        left: 140px;
+    }
+
+    html[dir="rtl"] .mm-about-journey-timeline::before {
+        right: 140px;
+        left: auto;
+    }
+}
+
+/* IPAD MINI */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .mm-about-journey-timeline::before {
+        left: 114.5px;
+    }
+
+    html[dir="rtl"] .mm-about-journey-timeline::before {
+        right: 114.5px;
+        left: auto;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .mm-about-journey-timeline::before {
+        display: none !important;
+    }
+}
+
+/* IPAD MINI — SERVICE BENEFITS */
+@media (min-width: 600px) and (max-width: 820px) {
+
+    .mm2-cta-service-strip {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0;
+        padding: 18px;
+    }
+
+    .mm2-cta-service {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        min-width: 0;
+        padding: 18px 12px;
+        border-right: 1px solid #E2C9CA;
+        border-bottom: 1px solid #E2C9CA;
+    }
+
+    .mm2-cta-service:nth-child(even) {
+        border-right: none;
+    }
+
+    .mm2-cta-service:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .mm2-cta-service-icon {
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+    }
+
+    .mm2-cta-service h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .mm2-cta-service p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    html[dir="rtl"] .mm2-cta-service {
+        border-right: none;
+        border-left: 1px solid #E2C9CA;
+    }
+
+    html[dir="rtl"] .mm2-cta-service:nth-child(even) {
+        border-left: none;
+    }
+}
+
+/* IPAD MINI — CTA BENEFITS LAYOUT */
+@media (min-width: 600px) and (max-width: 820px) {
+
+    .mm2-cta-benefits {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        align-items: center;
+        column-gap: 16px;
+        row-gap: 14px;
+        width: 100%;
+    }
+
+    .mm2-cta-benefit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        padding: 8px;
+        border-right: none;
+        text-align: left;
+    }
+
+    .mm2-cta-benefit:last-child {
+        grid-column: 1 / -1;
+        width: 50%;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .mm2-cta-benefit-icon {
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        font-size: 23px;
+    }
+
+    .mm2-cta-benefit p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* IPAD MINI — COMFORT GUIDE CENTER ALIGNMENT */
+@media (min-width: 621px) and (max-width: 850px) {
+
+    .comfort-banner {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .comfort-art {
+        width: 100%;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comfort-copy {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .comfort-copy h2 {
+        text-align: center;
+    }
+
+    .comfort-copy>p:not(.eyebrow) {
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .comfort-copy .text-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* MOBILE — COLLECTION CARDS ONE BY ONE */
+@media (max-width: 760px) {
+
+    .mm-collection-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 28px;
+    }
+
+    .mm-collection-card,
+    .mm-collection-card-large,
+    .mm-collection-card-top,
+    .mm-collection-card-bottom {
+        grid-column: 1 / -1 !important;
+        width: 100%;
+    }
+
+    .mm-collection-image-link,
+    .mm-collection-card-large .mm-collection-image-link {
+        width: 100%;
+        height: 350px;
+        aspect-ratio: unset;
+    }
+
+    .mm-collection-card-info {
+        width: 100%;
+    }
+}
+
+/* MOBILE — STORY STAMP LARGER CIRCLE */
+@media (max-width: 760px) {
+
+    .mm-story-stamp {
+        width: 112px;
+        height: 112px;
+        min-width: 112px;
+        min-height: 112px;
+        padding: 14px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+
+        border-radius: 50%;
+        overflow: visible;
+    }
+
+    .mm-story-stamp-top,
+    .mm-story-stamp-bottom {
+        display: block;
+        width: 100%;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.6px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .mm-story-stamp-heart {
+        font-size: 27px;
+        line-height: 1.2;
+        flex-shrink: 0;
+    }
+}
+
+/* MOBILE — STORY IMAGE CAPTION POSITION */
+@media (max-width: 760px) {
+    .mm-story-image-caption {
+        bottom: -20px;
+        left: 0;
+        font-size: 14px;
+        gap: 12px;
+        z-index: 3;
+    }
+}
+
+/* MOBILE — HEART BESIDE FIRST TEXT LINE */
+@media (max-width: 600px) {
+
+    .mm-testimonials-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .mm-testimonials-footer-heart {
+        flex: 0 0 auto;
+        font-size: 25px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+
+    .mm-testimonials-footer p {
+        flex: 0 1 auto;
+        width: auto;
+        max-width: calc(100% - 40px);
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================
+   HOME 2 HERO — MOBILE FIX
+========================================= */
+
+@media (max-width: 760px) {
+
+    .mm2-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 65px 18px 35px;
+        overflow: hidden;
+        background-position: 62% center;
+        background-size: cover;
+    }
+
+    .mm2-hero-content {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mm2-hero-eyebrow {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 22px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    .mm2-hero-line {
+        width: 16px;
+        flex-shrink: 0;
+    }
+
+    .mm2-hero-content h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 1.15;
+        letter-spacing: -0.8px;
+        overflow-wrap: normal;
+    }
+
+    .mm2-hero-content h1 em {
+        display: block;
+        margin-top: 10px;
+        font-size: 37px;
+        line-height: 1.15;
+    }
+
+    .mm2-hero-description {
+        width: 100%;
+        max-width: 420px;
+        margin: 22px auto 0;
+        font-size: 18px;
+        line-height: 1.65;
+        text-align: center;
+    }
+
+    .mm2-hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .mm2-hero-btn-primary,
+    .mm2-hero-btn-secondary {
+        width: 100%;
+        min-height: 54px;
+        justify-content: center;
+        padding: 13px 15px;
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+    .mm2-hero-bottom-note {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 22px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Feature cards — single column */
+
+    .mm2-hero-feature-bar {
+        position: relative;
+        inset: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 480px;
+        gap: 0;
+        margin: 30px auto 0;
+        padding: 12px 16px;
+        border-radius: 18px;
+    }
+
+    .mm2-hero-feature {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-width: 0;
+        gap: 14px;
+        padding: 13px 5px;
+    }
+
+    .mm2-hero-feature+.mm2-hero-feature,
+    .mm2-hero-feature:nth-child(even) {
+        border-left: 0;
+        border-top: 1px solid rgba(189, 115, 122, 0.3);
+    }
+
+    .mm2-feature-icon {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        font-size: 23px;
+    }
+
+    .mm2-hero-feature>div {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .mm2-hero-feature h3 {
+        margin: 0 0 3px;
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .mm2-hero-feature p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Pagination */
+
+    .mm2-hero-pagination {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 22px;
+    }
+}
+
+/* Extra small mobile */
+
+@media (max-width: 380px) {
+
+    .mm2-hero {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .mm2-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .mm2-hero-content h1 em {
+        font-size: 35px;
+    }
+
+    .mm2-hero-description {
+        font-size: 17px;
+    }
+}
+
+/* MOBILE — HIDE HERO PAGINATION */
+@media (max-width: 760px) {
+    .mm2-hero-pagination {
+        display: none !important;
+    }
+}
+
+/* MOBILE — REAL LIFE STAMP INNER SPACING */
+@media (max-width: 600px) {
+
+    .mm2-edit-photo-stamp {
+        width: 126px;
+        height: 126px;
+        min-width: 126px;
+        min-height: 126px;
+
+        padding: 18px !important;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        border-radius: 50%;
+    }
+
+    .mm2-edit-photo-stamp>span:first-child {
+        width: 100%;
+        padding: 0 !important;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+        text-align: center;
+    }
+
+    .mm2-edit-photo-stamp strong {
+        width: 100%;
+        padding: 0 !important;
+        margin: 2px 0;
+        font-size: 20px;
+        line-height: 1.25;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .mm2-edit-stamp-heart {
+        padding: 0 !important;
+        margin: 0;
+        font-size: 19px;
+        line-height: 1.3;
+    }
+}
+
+/* MOBILE — MATERNITY EDIT CARDS ONE BY ONE */
+@media (max-width: 600px) {
+
+    .mm2-edit-categories {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 22px;
+        width: 100%;
+    }
+
+    .mm2-edit-category,
+    .mm2-edit-category:last-child {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        max-width: 100%;
+        justify-self: stretch;
+    }
+
+    .mm2-edit-category-image,
+    .mm2-edit-category:last-child .mm2-edit-category-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 0.82 / 1;
+        overflow: hidden;
+    }
+
+    .mm2-edit-category-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mm2-edit-category-info {
+        width: 100%;
+        padding: 18px 16px 20px;
+    }
+}
+
+/* MOBILE — CATEGORY TITLE SINGLE LINE */
+@media (max-width: 600px) {
+
+    .mm2-edit-category-info h3 br {
+        display: none !important;
+    }
+
+    .mm2-edit-category-info h3 {
+        white-space: nowrap !important;
+        width: 100%;
+        font-size: 19px;
+        line-height: 1.3;
+    }
+}
+
+/* MOBILE — FABRIC STORY FOOTER LAYOUT */
+@media (max-width: 600px) {
+
+    .mm2-fabric-footer {
+        display: grid;
+        grid-template-columns: 46px minmax(0, 1fr);
+        align-items: center;
+        gap: 16px 12px;
+        width: 100%;
+        margin-top: 35px;
+        padding-top: 24px;
+        text-align: left;
+    }
+
+    .mm2-fabric-footer-mark {
+        width: 46px;
+        height: 46px;
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 24px;
+    }
+
+    .mm2-fabric-footer>p {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .mm2-fabric-link {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        min-height: 54px;
+        padding: 14px 18px;
+        justify-content: center;
+        gap: 12px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+/* MOBILE — PROMISE CARDS ONE BY ONE */
+@media (max-width: 600px) {
+
+    .mm2-promise-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .mm2-promise-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 220px;
+        padding: 24px 22px;
+        border-radius: 22px;
+    }
+
+    .mm2-promise-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .mm2-promise-number {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .mm2-promise-symbol {
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        font-size: 25px;
+    }
+
+    .mm2-promise-card-bottom h3 {
+        font-size: 22px;
+        line-height: 1.35;
+        margin-bottom: 10px;
+    }
+
+    .mm2-promise-card-bottom p {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.65;
+    }
+}
+
+/* MOBILE — MOMENTS GALLERY ONE BY ONE */
+@media (max-width: 600px) {
+
+    .mm2-moments-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .mm2-moments-main {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 0.95 / 1;
+        border-radius: 100px 100px 22px 22px;
+    }
+
+    .mm2-moments-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .mm2-moments-small {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 1 / 1;
+        border-radius: 22px;
+    }
+
+    .mm2-moments-small>.mm2-moments-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mm2-moments-small-caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 22px;
+    }
+
+    .mm2-moments-small-caption span {
+        font-size: 13px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .mm2-moments-small-caption h3 {
+        font-size: 23px;
+        line-height: 1.35;
+    }
+
+    .mm2-moments-center-note {
+        width: 170px;
+        height: 170px;
+        margin: 5px auto;
+        padding: 15px;
+        border-radius: 50%;
+    }
+}
+
+/* MOBILE — BIGGER CIRCLE, SAME CENTER POSITION */
+@media (max-width: 600px) {
+
+    .mm2-moments-center-note {
+        position: static !important;
+        align-self: center !important;
+
+        width: 210px !important;
+        height: 210px !important;
+        min-width: 210px;
+        min-height: 210px;
+
+        margin: 12px auto 20px !important;
+        padding: 24px !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: none !important;
+    }
+
+    .mm2-moments-center-note p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .mm2-moments-note-heart {
+        margin-bottom: 10px;
+    }
+}
+
+/* MOBILE — EVERYDAY EDIT SECTION FIX */
+@media (max-width: 600px) {
+
+    /* Section spacing */
+    .mm2-everyday-section {
+        padding: 55px 18px;
+        overflow: hidden;
+    }
+
+    .mm2-everyday-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Heading and intro stacked */
+    .mm2-everyday-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .mm2-everyday-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mm2-everyday-eyebrow {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .mm2-everyday-heading h2 {
+        font-size: 38px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .mm2-everyday-intro {
+        width: 100%;
+        max-width: 440px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mm2-everyday-intro>p {
+        font-size: 18px;
+        line-height: 1.65;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .mm2-everyday-view-link {
+        display: inline-flex;
+        justify-content: center;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* Product cards — one by one */
+    .mm2-everyday-products {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        width: 100%;
+    }
+
+    .mm2-everyday-product,
+    .mm2-everyday-product:last-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Equal image sizing */
+    .mm2-everyday-product-image,
+    .mm2-everyday-product:last-child .mm2-everyday-product-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 0.95 / 1;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .mm2-everyday-product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Product labels */
+    .mm2-everyday-product-tag {
+        top: 14px;
+        right: 12px;
+        left: 12px;
+        max-width: calc(100% - 24px);
+        padding: 10px 12px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Product details */
+    .mm2-everyday-product-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 16px 3px 0;
+    }
+
+    .mm2-everyday-product-copy {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .mm2-everyday-product-category {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .mm2-everyday-product-copy h3 {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    .mm2-everyday-product-copy>p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .mm2-everyday-product-price {
+        font-size: 19px;
+    }
+
+    .mm2-everyday-product-action {
+        flex: 0 0 42px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .mm2-everyday-bottom {
+        justify-content: center;
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+
+/* MOBILE — REMOVE EXTRA GAP ABOVE PRODUCT CARDS */
+@media (max-width: 600px) {
+
+    .mm2-everyday-header {
+        display: flex !important;
+        flex-direction: column;
+        gap: 12px !important;
+        margin-bottom: 22px !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .mm2-everyday-heading {
+        flex: none !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .mm2-everyday-intro {
+        flex: none !important;
+        width: 100%;
+        max-width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .mm2-everyday-intro>p {
+        margin-bottom: 12px !important;
+    }
+
+    .mm2-everyday-products {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+/* MOBILE — REVIEW CARD STAMP SPACING */
+@media (max-width: 600px) {
+
+    .mm2-review-featured {
+        position: relative;
+        padding: 30px 18px !important;
+    }
+
+    .mm2-review-featured-label {
+        max-width: calc(100% - 82px);
+        min-height: 58px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .mm2-review-featured-stamp {
+        top: 18px !important;
+        right: 16px !important;
+        bottom: auto !important;
+        width: 68px !important;
+        height: 68px !important;
+        font-size: 9px !important;
+    }
+
+    html[dir="rtl"] .mm2-review-featured-label {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+
+    html[dir="rtl"] .mm2-review-featured-stamp {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+/* MOBILE — MOVE STAMP DOWN */
+@media (max-width: 600px) {
+    .mm2-review-featured-stamp {
+        top: 60px !important;
+        right: 16px !important;
+        left: auto !important;
+        bottom: auto !important;
+    }
+}
+
+/* MOBILE — COMMUNITY FOOTER LEFT ALIGNMENT */
+@media (max-width: 600px) {
+
+    .mm2-reviews-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        gap: 12px;
+        padding: 24px 20px;
+    }
+
+    .mm2-reviews-footer-heart {
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    .mm2-reviews-footer-copy {
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .mm2-reviews-footer-copy h3,
+    .mm2-reviews-footer-copy p {
+        text-align: left !important;
+    }
+
+    .mm2-reviews-button {
+        align-self: flex-start;
+        margin: 0;
+    }
+}
+
+/* MOBILE — CTA SECTION RESPONSIVE FIX */
+@media (max-width: 600px) {
+
+    .mm2-cta-section {
+        padding: 45px 20px !important;
+        overflow: hidden;
+    }
+
+    .mm2-cta-main {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px !important;
+        padding: 10px 0 30px !important;
+    }
+
+    .mm2-cta-content {
+        width: 100% !important;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* EMAIL FORM */
+    .mm2-cta-form {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100%;
+        gap: 10px !important;
+        padding: 8px !important;
+        border-radius: 22px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .mm2-cta-email-wrap {
+        display: flex;
+        width: 100% !important;
+        min-height: 52px;
+        padding: 0 12px !important;
+        gap: 10px !important;
+    }
+
+    .mm2-cta-email-wrap input {
+        width: 100% !important;
+        min-width: 0;
+        font-size: 15px !important;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .mm2-cta-submit {
+        width: 100% !important;
+        min-height: 54px;
+        justify-content: center;
+        white-space: nowrap !important;
+        font-size: 14px !important;
+        padding: 12px 10px !important;
+    }
+
+    /* BENEFITS */
+    .mm2-cta-benefits {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        width: 100%;
+        margin-top: 25px !important;
+    }
+
+    .mm2-cta-benefit {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start;
+        gap: 9px !important;
+        padding: 0 4px !important;
+        border-right: none !important;
+        text-align: center !important;
+    }
+
+    .mm2-cta-benefit-icon {
+        flex: 0 0 46px !important;
+        width: 46px !important;
+        height: 46px !important;
+        font-size: 21px !important;
+    }
+
+    .mm2-cta-benefit p {
+        width: 100%;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+        overflow-wrap: break-word;
+    }
+
+    /* CTA IMAGE */
+    .mm2-cta-visual {
+        width: 100% !important;
+        max-width: 320px;
+        min-height: 0 !important;
+        height: auto !important;
+        aspect-ratio: 0.9 / 1;
+        margin: 0 auto;
+    }
+
+    .mm2-cta-visual>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* MOBILE — SHOP CATEGORY CARDS ONE BY ONE */
+@media (max-width: 600px) {
+
+    .category-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 28px !important;
+        width: 100%;
+    }
+
+    .category-card {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .category-image {
+        display: block;
+        width: 100% !important;
+        height: 320px !important;
+        overflow: hidden;
+    }
+
+    .category-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .category-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 12px;
+        gap: 12px;
+    }
+
+    .category-meta b {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .category-meta small {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* MOBILE — CATEGORY TEXT CENTER ALIGN */
+@media (max-width: 600px) {
+
+    .category-meta {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .category-meta>span {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .category-meta b,
+    .category-meta small {
+        display: block;
+        text-align: center !important;
+    }
+
+    .category-meta>i {
+        display: none;
+    }
+}
+
+/* MOBILE — PRODUCT PRICE & COLORS LEFT ALIGN */
+@media (max-width: 600px) {
+
+    .product-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        width: 100%;
+    }
+
+    .product-bottom .price {
+        width: 100%;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+
+    .product-bottom .swatches {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center;
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+
+/* SIZE GUIDE CTA NOTE - MOBILE ALIGNMENT */
+@media (max-width: 600px) {
+
+    .sg-help-visual {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .sg-help-note {
+        left: auto !important;
+        right: 12px !important;
+        bottom: 16px;
+        width: calc(100% - 24px);
+        max-width: calc(100% - 24px);
+        box-sizing: border-box;
+        z-index: 5;
+        gap: 10px;
+        padding: 14px 12px;
+    }
+
+    .sg-help-note-icon {
+        flex-shrink: 0;
+    }
+
+    .sg-help-note strong {
+        font-size: 16px;
+    }
+
+    .sg-help-note p {
+        font-size: 14px;
+    }
+}
+
+/* =====================================
+   HOME 2 - MATERNITY EDIT DARK MODE FIX
+===================================== */
+
+/* Apply dark background to complete cards */
+html.dark-mode .mm2-edit-category {
+    background: #302535 !important;
+    border-color: rgba(230, 154, 156, 0.22) !important;
+    color: #FFF9F6 !important;
+}
+
+/* Card headings and descriptions */
+html.dark-mode .mm2-edit-category-info {
+    background: #302535 !important;
+}
+
+html.dark-mode .mm2-edit-category-info h3 {
+    color: #FFF9F6 !important;
+}
+
+html.dark-mode .mm2-edit-category-info p {
+    color: #D6C8D7 !important;
+}
+
+html.dark-mode .mm2-edit-category-label,
+html.dark-mode .mm2-edit-shop-link {
+    color: #E69A9C !important;
+}
+
+/* Arrow - normal state */
+html.dark-mode .mm2-edit-image-arrow {
+    background: #211A25 !important;
+    color: #FFF9F6 !important;
+    border: 1px solid rgba(230, 154, 156, 0.35);
+}
+
+/* Arrow - hover state */
+html.dark-mode .mm2-edit-category:hover .mm2-edit-image-arrow {
+    background: #E69A9C !important;
+    color: #49304F !important;
+    border-color: #E69A9C !important;
+}
+
+/* Card hover */
+html.dark-mode .mm2-edit-category:hover {
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.30) !important;
+}
+
+/* Keep arrow visible above image */
+.mm2-edit-image-arrow {
+    z-index: 3;
+}
+
+/* HOME 2 - FLOATING FABRIC CARD DARK MODE */
+
+html.dark-mode body .mm2-edit-section .mm2-edit-fabric-card {
+    background: #302535 !important;
+    background-color: #302535 !important;
+    border: 1px solid rgba(230, 154, 156, 0.35) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.dark-mode body .mm2-edit-section .mm2-edit-fabric-caption p {
+    color: #FFF9F6 !important;
+}
+
+html.dark-mode body .mm2-edit-section .mm2-edit-caption-line {
+    background: #E69A9C !important;
+}
+
+html.dark-mode body .mm2-edit-section .mm2-edit-caption-heart {
+    color: #E69A9C !important;
+}
+
+/* HOME 2 - FABRIC IMAGE LABEL DARK MODE */
+
+html.dark-mode .mm2-fabric-section .mm2-fabric-image-tag {
+    background: rgba(48, 37, 53, 0.94) !important;
+    background-color: rgba(48, 37, 53, 0.94) !important;
+    color: #FFF9F6 !important;
+    border: 1px solid rgba(230, 154, 156, 0.35) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   MELLOWMUM SHOP - DARK MODE TEXT FIX
+========================================= */
+
+html.dark-mode body {
+    --ink: #FFF9F6;
+    --muted: #D6C8D7;
+}
+
+/* Main headings */
+html.dark-mode .shop-hero h1,
+html.dark-mode .section-intro h2,
+html.dark-mode .comfort-banner h2,
+html.dark-mode .newsletter-section h2,
+html.dark-mode .shop-hero h1:not(em) {
+    color: #FFF9F6 !important;
+}
+
+/* Product and category headings */
+html.dark-mode .category-meta b,
+html.dark-mode .product-info h3,
+html.dark-mode .filter-panel h3,
+html.dark-mode .filter-heading h4 {
+    color: #FFF9F6 !important;
+}
+
+/* Supporting text */
+html.dark-mode .hero-description,
+html.dark-mode .section-intro>p,
+html.dark-mode .category-meta small,
+html.dark-mode .shop-toolbar>p {
+    color: #D6C8D7 !important;
+}
+
+/* Filter and sort text */
+html.dark-mode .sort-control,
+html.dark-mode .sort-control select,
+html.dark-mode .filter-panel,
+html.dark-mode .check-row {
+    color: #FFF9F6 !important;
+}
+
+/* SHOP - WISHLIST ICON DARK MODE FIX */
+
+html.dark-mode .product-card .wishlist-button {
+    background: #493A4C !important;
+    color: #FFF9F6 !important;
+    border: 1px solid rgba(230, 154, 156, 0.4) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Heart hover */
+html.dark-mode .product-card .wishlist-button:hover {
+    background: #E69A9C !important;
+    color: #49304F !important;
+}
+
+/* Selected wishlist */
+html.dark-mode .product-card .wishlist-button.is-liked {
+    background: #E69A9C !important;
+    color: #49304F !important;
+    border-color: #E69A9C !important;
+}
+
+/* Ensure heart icon is visible */
+html.dark-mode .product-card .wishlist-button i {
+    color: inherit !important;
+}
+
+/* SIZE GUIDE - MEASUREMENT UNIT DROPDOWN ARROW */
+#mmFitUnit {
+    padding-right: 52px !important;
+    padding-left: 26px !important;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2349304F' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+/* Dark Mode */
+html.dark-mode #mmFitUnit {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23F8EDF4' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+
+/* WARDROBE FORM - DROPDOWN ARROW POSITION */
+#mmWardrobeCategory,
+#mmWardrobeStage,
+#mmWardrobeBudget {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 65px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2349304F' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+    background-size: 18px !important;
+}
+
+/* DARK MODE */
+html.dark-mode #mmWardrobeCategory,
+html.dark-mode #mmWardrobeStage,
+html.dark-mode #mmWardrobeBudget {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23F7EDF5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+}
+
+/* RTL MODE */
+html[dir="rtl"] #mmWardrobeCategory,
+html[dir="rtl"] #mmWardrobeStage,
+html[dir="rtl"] #mmWardrobeBudget {
+    background-position: left 10px center !important;
+    padding-left: 65px !important;
+    padding-right: 14px !important;
+}
+
+/* =====================================
+   FINAL RTL HERO ALIGNMENT OVERRIDE
+===================================== */
+
+html[dir="rtl"] body .mm-hero-content {
+    direction: rtl !important;
+    text-align: right !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+
+html[dir="rtl"] body .mm-hero-eyebrow {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+}
+
+html[dir="rtl"] body .mm-hero-title,
+html[dir="rtl"] body .mm-hero-description {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] body .mm-hero-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-self: stretch !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .mm-hero-benefits {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-self: stretch !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .mm-hero-benefit {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+/* Mobile RTL */
+@media (max-width: 760px) {
+    html[dir="rtl"] body .mm-hero-content {
+        align-items: flex-end !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] body .mm-hero-actions {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] body .mm-hero-benefits {
+        justify-content: flex-start !important;
+    }
+}
+
+/* FINAL RTL OVERRIDE - WHY CHOOSE EYEBROW */
+
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-eyebrow {
+    display: flex !important;
+    width: 100% !important;
+    direction: ltr !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    gap: 14px !important;
+}
+
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-eyebrow>span {
+    order: 0 !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-eyebrow {
+    unicode-bidi: isolate !important;
+}
+
+/* FINAL FIX - WHY CHOOSE BUTTONS RTL */
+
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-actions {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    direction: ltr !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex-wrap: nowrap !important;
+    gap: 30px !important;
+}
+
+/* Shop Now - RIGHT SIDE */
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-actions .mm-why-btn {
+    order: 1 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Learn More - LEFT SIDE */
+html[dir="rtl"] body .mm-why-section .mm-why-content .mm-why-actions .mm-why-link {
+    order: 2 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* MELLOWMUM COLLECTION HEADING - RTL RIGHT ALIGN */
+
+html[dir="rtl"] body .mm-collection-section .mm-collection-heading {
+    text-align: right !important;
+}
+
+html[dir="rtl"] body .mm-collection-section .mm-collection-eyebrow {
+    justify-content: flex-start !important;
+    direction: rtl !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+html[dir="rtl"] body .mm-collection-section .mm-collection-heading-row {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .mm-collection-section .mm-collection-title {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .mm-collection-section .mm-collection-intro {
+    text-align: right !important;
+    direction: rtl !important;
 }

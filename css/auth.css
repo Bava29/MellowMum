@@ -1215,3 +1215,30 @@ html[dir="rtl"] .mm-auth-tools {
 html.dark-mode .mm-auth-logo {
     content: url("../images/logo-white.png");
 }
+
+/* PASSWORD EYE ICON - DARK MODE VISIBILITY FIX */
+
+html.dark-mode .mm-password-toggle {
+    color: #E69A9C !important;
+    background: transparent !important;
+}
+
+/* Hover state */
+html.dark-mode .mm-password-toggle:hover {
+    background: #59465A !important;
+    color: #FFFFFF !important;
+}
+
+/* Eye icon */
+html.dark-mode .mm-password-toggle i {
+    color: inherit !important;
+    opacity: 1 !important;
+}
+
+/* Focus state */
+html.dark-mode .mm-password-toggle:focus-visible {
+    background: #59465A !important;
+    color: #FFFFFF !important;
+    outline: 2px solid #E69A9C !important;
+    outline-offset: 2px;
+}
