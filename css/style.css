@@ -13782,7 +13782,7 @@ html.dark-mode .sg-chart-cta:hover {
     gap: 12px;
     padding: 14px 24px;
     border: 1px solid #49304F;
-    border-radius: 6px;
+    border-radius: 12px;
     background: #49304F;
     color: #ffffff;
     font-family: "Outfit", sans-serif;
@@ -23902,4 +23902,509 @@ html[dir="rtl"] body .mm-collection-section .mm-collection-title {
 html[dir="rtl"] body .mm-collection-section .mm-collection-intro {
     text-align: right !important;
     direction: rtl !important;
+}
+
+/* =========================================
+   MELLOWMUM ABOUT JOURNEY - STRONG RTL FIX
+========================================= */
+
+html[dir="rtl"] body .mm-about-journey {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-timeline {
+    direction: rtl !important;
+}
+
+/* Correct RTL timeline structure */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-step {
+    display: grid !important;
+    grid-template-columns: 115px 80px minmax(0, 1fr) !important;
+    direction: rtl !important;
+    align-items: start !important;
+    gap: 20px !important;
+}
+
+/* Year - RIGHT SIDE */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-year {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    text-align: right !important;
+    direction: rtl !important;
+    justify-self: stretch !important;
+}
+
+/* Number marker - CENTER */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-marker {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: center !important;
+    align-self: start !important;
+}
+
+/* Content card - LEFT SIDE */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-card {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Card text alignment */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-label,
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-card h3,
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-card p {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Timeline vertical line */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-timeline::before {
+    right: 175px !important;
+    left: auto !important;
+}
+
+/* Footer */
+html[dir="rtl"] body .mm-about-journey .mm-about-journey-footer {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+    html[dir="rtl"] body .mm-about-journey .mm-about-journey-step {
+        grid-template-columns: 65px 60px minmax(0, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    html[dir="rtl"] body .mm-about-journey .mm-about-journey-timeline::before {
+        right: 125px !important;
+        left: auto !important;
+    }
+
+    html[dir="rtl"] body .mm-about-journey .mm-about-journey-year {
+        text-align: right !important;
+        font-size: 23px !important;
+    }
+
+    html[dir="rtl"] body .mm-about-journey .mm-about-journey-marker {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    html[dir="rtl"] body .mm-about-journey .mm-about-journey-card {
+        padding: 22px 18px !important;
+    }
+}
+
+/* ==========================================
+   TEAM SECTION - STRONG RTL HORIZONTAL FIX
+========================================== */
+
+html[dir="rtl"] body .mm-team-section .mm-team-member {
+    display: grid !important;
+    grid-template-columns: 28px minmax(0, 1fr) 155px !important;
+    grid-template-rows: auto !important;
+    direction: ltr !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+/* Team image - RIGHT SIDE */
+html[dir="rtl"] body .mm-team-section .mm-team-member .mm-team-member-image-wrap {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    width: 155px !important;
+    min-width: 0 !important;
+    justify-self: end !important;
+    align-self: center !important;
+}
+
+/* Image itself */
+html[dir="rtl"] body .mm-team-section .mm-team-member-image-wrap img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Text - CENTER */
+html[dir="rtl"] body .mm-team-section .mm-team-member .mm-team-member-info {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Member number - LEFT */
+html[dir="rtl"] body .mm-team-section .mm-team-member .mm-team-member-index {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    justify-self: start !important;
+    direction: ltr !important;
+}
+
+/* Tablet */
+@media (min-width: 761px) and (max-width: 1024px) {
+    html[dir="rtl"] body .mm-team-section .mm-team-member {
+        grid-template-columns: 25px minmax(0, 1fr) 115px !important;
+        gap: 14px !important;
+    }
+
+    html[dir="rtl"] body .mm-team-section .mm-team-member-image-wrap {
+        width: 115px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    html[dir="rtl"] body .mm-team-section .mm-team-member {
+        grid-template-columns: 20px minmax(0, 1fr) 85px !important;
+        gap: 10px !important;
+        align-items: center !important;
+    }
+
+    html[dir="rtl"] body .mm-team-section .mm-team-member-image-wrap {
+        width: 85px !important;
+    }
+}
+
+/* ==========================================
+   SIZE FIT FORM - RTL DROPDOWN FIX
+========================================== */
+
+html[dir="rtl"] body #mmFitForm .mm-fit-fields label {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Measurement inputs - right aligned text */
+html[dir="rtl"] body #mmFitForm .mm-fit-fields input {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Measurement unit dropdown */
+html[dir="rtl"] body #mmFitForm #mmFitUnit {
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+
+    padding-left: 52px !important;
+    padding-right: 26px !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    background-position: left 10px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+}
+
+/* Dropdown options */
+html[dir="rtl"] body #mmFitForm #mmFitUnit option {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* ==========================================
+   CONTACT FORM - RTL DROPDOWN & INPUT FIX
+========================================== */
+
+/* Right align all contact form labels */
+html[dir="rtl"] body .mm-contact-form .mm-contact-field label {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Phone number input - right alignment */
+html[dir="rtl"] body .mm-contact-form #mmContactPhone {
+    direction: rtl !important;
+    text-align: right !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+/* Placeholder alignment */
+html[dir="rtl"] body .mm-contact-form #mmContactPhone::placeholder {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Topic dropdown - arrow left, text right */
+html[dir="rtl"] body .mm-contact-form #mmContactSubject {
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+
+    padding-left: 48px !important;
+    padding-right: 15px !important;
+
+    background-position: left 10px center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Dropdown options */
+html[dir="rtl"] body .mm-contact-form #mmContactSubject option {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Dark mode compatibility */
+html.dark-mode[dir="rtl"] body .mm-contact-form #mmContactSubject {
+    color: #F8EAF2 !important;
+    background-position: left 10px center !important;
+}
+
+html.dark-mode[dir="rtl"] body .mm-contact-form #mmContactPhone {
+    color: #F8EAF2 !important;
+    text-align: right !important;
+}
+
+/* =========================================
+   MELLOWMUM STORY STAMP — TABLET OVERRIDE
+   iPad Mini + iPad Pro
+   Add at the VERY END of style.css
+========================================= */
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+
+    .mm-story-visual .mm-story-stamp {
+        width: 122px !important;
+        height: 122px !important;
+        min-width: 122px !important;
+        padding: 15px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 3px !important;
+
+        border-radius: 50% !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    .mm-story-visual .mm-story-stamp-top,
+    .mm-story-visual .mm-story-stamp-bottom {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 10px !important;
+        line-height: 1.4 !important;
+        letter-spacing: 0.6px !important;
+        font-weight: 800 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    .mm-story-visual .mm-story-stamp-heart {
+        font-size: 32px !important;
+        line-height: 1.1 !important;
+        margin: 2px 0 !important;
+    }
+}
+
+/* Larger iPad Pro / wider tablet */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+
+    .mm-story-visual .mm-story-stamp {
+        width: 130px !important;
+        height: 130px !important;
+        min-width: 130px !important;
+        padding: 17px !important;
+    }
+
+    .mm-story-visual .mm-story-stamp-top,
+    .mm-story-visual .mm-story-stamp-bottom {
+        font-size: 11px !important;
+    }
+}
+
+/* =========================================
+   MELLOWMUM HOME 2 CTA
+   iPAD PRO RESPONSIVE FIX
+========================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /* TOP BENEFITS */
+    .mm2-cta-benefits {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mm2-cta-benefit {
+        display: flex !important;
+        align-items: center;
+        gap: 8px !important;
+        min-width: 0;
+        padding: 8px 6px !important;
+        border-right: 1px solid #E1C9CA;
+    }
+
+    .mm2-cta-benefit:last-child {
+        border-right: none;
+    }
+
+    .mm2-cta-benefit-icon {
+        flex: 0 0 40px !important;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 21px !important;
+    }
+
+    .mm2-cta-benefit p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    /* BOTTOM SERVICE BENEFITS */
+    .mm2-cta-service-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 0 !important;
+        padding: 20px !important;
+        margin-top: 35px;
+    }
+
+    .mm2-cta-service {
+        justify-content: flex-start !important;
+        gap: 13px !important;
+        min-width: 0;
+        padding: 20px 15px !important;
+        border-right: 1px solid #E2C9CA;
+        border-bottom: 1px solid #E2C9CA;
+    }
+
+    .mm2-cta-service:nth-child(even) {
+        border-right: none;
+    }
+
+    .mm2-cta-service:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .mm2-cta-service-icon {
+        flex: 0 0 50px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 25px !important;
+    }
+
+    .mm2-cta-service h3 {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    }
+
+    .mm2-cta-service p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* RTL SUPPORT */
+    html[dir="rtl"] .mm2-cta-benefit {
+        border-right: none;
+        border-left: 1px solid #E1C9CA;
+    }
+
+    html[dir="rtl"] .mm2-cta-benefit:last-child {
+        border-left: none;
+    }
+
+    html[dir="rtl"] .mm2-cta-service {
+        border-right: none;
+        border-left: 1px solid #E2C9CA;
+    }
+
+    html[dir="rtl"] .mm2-cta-service:nth-child(even) {
+        border-left: none;
+    }
+}
+
+/* =========================================
+   IPAD PRO - CTA BENEFITS: 2 + 1 CENTER
+========================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    .mm2-cta-benefits {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        justify-items: stretch !important;
+        align-items: center !important;
+        column-gap: 18px !important;
+        row-gap: 18px !important;
+        width: 100% !important;
+    }
+
+    .mm2-cta-benefit {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        gap: 10px !important;
+        padding: 10px !important;
+        border-right: none !important;
+        text-align: left !important;
+    }
+
+    /* Third benefit - centered in second row */
+    .mm2-cta-benefit:last-child {
+        grid-column: 1 / -1 !important;
+        width: 50% !important;
+        justify-self: center !important;
+        justify-content: center !important;
+        border: none !important;
+    }
+
+    .mm2-cta-benefit-icon {
+        flex: 0 0 44px !important;
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 23px !important;
+    }
+
+    .mm2-cta-benefit p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+}
+
+/* ==========================================
+   SIZE GUIDE - MEASUREMENT TEXT LEFT SHIFT
+   ALL SCREEN SIZES
+========================================== */
+
+html body #mmFitForm #mmFitUnit {
+    padding-left: 12px !important;
+    padding-right: 52px !important;
+    text-indent: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* RTL support */
+html[dir="rtl"] body #mmFitForm #mmFitUnit {
+    padding-left: 52px !important;
+    padding-right: 12px !important;
+    text-align: right !important;
+    text-align-last: right !important;
+    background-position: left 10px center !important;
 }
