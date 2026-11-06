@@ -461,6 +461,14 @@ html.dark-mode .mm-mobile-link {
     border-bottom-color: rgba(230, 154, 156, 0.16);
 }
 
+/* Keep the current page and hovered item visibly accented in dark mode. */
+html.dark-mode .mm-nav-link:hover,
+html.dark-mode .mm-nav-link.active,
+html.dark-mode .mm-mobile-link:hover,
+html.dark-mode .mm-mobile-link.active {
+    color: var(--secondary-color);
+}
+
 html.dark-mode .mm-setting-btn {
     color: #F7EDF5;
     border-color: rgba(230, 154, 156, 0.24);
@@ -24407,4 +24415,244 @@ html[dir="rtl"] body #mmFitForm #mmFitUnit {
     text-align: right !important;
     text-align-last: right !important;
     background-position: left 10px center !important;
+}
+
+
+/* MellowMum - Dark Mode Photo Stamp Text Fix */
+
+html.dark-mode .mm2-edit-photo-stamp {
+    background: rgba(255, 249, 243, 0.96) !important;
+    color: #49304F !important;
+    border-color: rgba(230, 154, 156, 0.65) !important;
+}
+
+html.dark-mode .mm2-edit-photo-stamp>span:first-child {
+    color: #49304F !important;
+}
+
+html.dark-mode .mm2-edit-photo-stamp strong {
+    color: #49304F !important;
+}
+
+html.dark-mode .mm2-edit-photo-stamp .mm2-edit-stamp-heart {
+    color: #BD737A !important;
+}
+
+/* ==========================================
+   SHOP HERO - iPAD MINI TEXT & IMAGE GAP FIX
+========================================== */
+
+@media (min-width: 700px) and (max-width: 850px) {
+
+    .shop-hero {
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+        column-gap: 6% !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    .shop-hero .hero-copy {
+        min-width: 0 !important;
+        padding-right: 8px !important;
+    }
+
+    .shop-hero .hero-art {
+        width: calc(100% - 12px) !important;
+        margin-left: 12px !important;
+        min-width: 0 !important;
+    }
+
+    html[dir="rtl"] .shop-hero .hero-art {
+        margin-left: 0 !important;
+        margin-right: 12px !important;
+    }
+}
+
+/* ==========================================
+   iPAD PRO - SHOP HERO RIGHT PADDING FIX
+========================================== */
+
+@media (min-width: 851px) and (max-width: 1024px) {
+
+    .shop-hero {
+        padding-right: 7% !important;
+        padding-left: 4% !important;
+        box-sizing: border-box !important;
+    }
+
+    .shop-hero .hero-art {
+        width: 100% !important;
+        max-width: calc(100% - 12px) !important;
+        margin-right: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    .shop-hero .hero-art img {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mm-hero-photo-note {
+        right: 12px !important;
+        padding: 14px 18px !important;
+        box-sizing: border-box;
+    }
+}
+
+/* ==========================================
+   TESTIMONIAL FEATURED LABEL - MOBILE FIX
+========================================== */
+
+@media screen and (max-width: 760px) {
+
+    .mm-testimonial-featured {
+        padding: 25px 20px 22px !important;
+        justify-content: flex-start !important;
+        min-height: auto !important;
+        gap: 0 !important;
+    }
+
+    .mm-testimonial-featured .mm-testimonial-author {
+        position: relative !important;
+        width: 100% !important;
+        margin-bottom: 16px !important;
+        padding-right: 5px !important;
+        box-sizing: border-box !important;
+    }
+
+    .mm-testimonial-featured .mm-testimonial-featured-label {
+        position: relative !important;
+        display: block !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        margin: 0 0 0 62px !important;
+        padding: 5px 0 !important;
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+        letter-spacing: 1.2px !important;
+        white-space: normal !important;
+    }
+
+    html[dir="rtl"] .mm-testimonial-featured .mm-testimonial-featured-label {
+        margin: 0 62px 0 0 !important;
+        text-align: right !important;
+    }
+}
+
+/* HOME 2 HERO - DARK MODE TEXT BRIGHTNESS */
+
+html.dark-mode .mm2-hero-description,
+html.dark-mode .mm2-hero-bottom-note,
+html.dark-mode .mm2-hero-bottom-note span {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 480px) {
+
+    /* Avoid stacking section and container padding on the About page. */
+    html body .mm-beliefs-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    html body .mm-beliefs-section .mm-beliefs-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    html body .mm-team-section {
+        padding-top: 32px;
+    }
+
+    html body .mm-team-section .mm-team-container {
+        padding-top: 0;
+    }
+
+    html body .mm-team-section {
+        padding-bottom: 35px !important;
+    }
+
+    html body .mm-team-section .mm-team-container {
+        padding-bottom: 0 !important;
+    }
+
+    html body .mm-about-faq {
+        padding-top: 35px !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    html body .mm-team-section {
+        padding-bottom: 30px !important;
+    }
+
+    html body .mm-about-faq {
+        padding-top: 30px !important;
+    }
+}
+
+/* SHOP HERO - MOBILE RIGHT SIDE SPACING FIX */
+
+@media screen and (max-width: 480px) {
+
+    html body .shop-hero .hero-art {
+        width: calc(100% - 24px) !important;
+        max-width: 430px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-right: 10px !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    html body .shop-hero .hero-image-main {
+        right: 12% !important;
+    }
+
+    html body .shop-hero .hero-stamp {
+        right: 8px !important;
+    }
+
+    html body .shop-hero .hero-orbit.orbit-one {
+        right: 0 !important;
+    }
+
+    /* RTL support */
+    html[dir="rtl"] body .shop-hero .hero-image-main {
+        right: auto !important;
+        left: 12% !important;
+    }
+
+    html[dir="rtl"] body .shop-hero .hero-stamp {
+        right: auto !important;
+        left: 8px !important;
+    }
+
+    html[dir="rtl"] body .shop-hero .hero-orbit.orbit-one {
+        right: auto !important;
+        left: 0 !important;
+    }
+}
+
+/* SHOP HERO - MOBILE VISUAL TOP GAP FIX */
+
+@media screen and (max-width: 480px) {
+
+    html body .shop-hero .hero-art {
+        margin-top: 20px !important;
+    }
+
+    html body .shop-hero .hero-orbit.orbit-one {
+        top: 0 !important;
+    }
+
+    html body .shop-hero .hero-orbit.orbit-two {
+        bottom: -13% !important;
+    }
 }

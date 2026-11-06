@@ -1242,3 +1242,28 @@ html.dark-mode .mm-password-toggle:focus-visible {
     outline: 2px solid #E69A9C !important;
     outline-offset: 2px;
 }
+
+
+/* =========================================
+   LOGIN & REGISTER - DARK MODE TOGGLE ICONS
+   ========================================= */
+
+html.dark-mode .mm-auth-tool {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+html.dark-mode .mm-auth-tool i {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+html.dark-mode .mm-auth-tool:hover {
+    color: #FFFFFF !important;
+    background: rgba(255, 255, 255, 0.10) !important;
+    border-color: #FFFFFF !important;
+}
+
+html.dark-mode .mm-auth-tool:hover i {
+    color: #FFFFFF !important;
+}
